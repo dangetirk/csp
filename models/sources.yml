@@ -7,7 +7,7 @@ sources:
     schema: "dmn01_rsksoi_euwe2_rsk_csp_curated" 
     tables:
       - name: Product_curated
-        description: Credit Suite Product, downstream raw table for covenant2. Covenant Mgmt
+        description: Credit Suite Product 
         columns:
           - name: AccountNumber
             tests:
@@ -18,7 +18,7 @@ sources:
     schema: "dmn01_rsksoi_euwe2_rsk_csp_curated" 
     tables:
       - name: Collateral_Pledged_curated
-        description: Credit Suite Product, downstream raw table for covenant2. Covenant Mgmt
+        description: Credit Suite Product 
         columns:
           - name: Collateral
             tests:
