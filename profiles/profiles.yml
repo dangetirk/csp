@@ -1,0 +1,29 @@
+csp:
+  target: dev
+  outputs:
+    dev:
+      project: dmn01-rsksoi-bld-01-2017
+      dataset: dmn01_rsksoi_euwe2_rsk_csp_curated
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: europe-west2
+      method: oauth
+      priority: interactive
+      threads: 1
+      type: bigquery
+
+#dbt debug --profiles-dir ./profiles --profile csp  
+
+stg:
+  target: dev
+  outputs:
+    dev:
+      project: dmn01-rsksoi-bld-01-2017
+      dataset: dmn01_rsksoi_euwe2_rsk_csp_staging
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: europe-west2
+      method: oauth
+      priority: interactive
+      threads: 1
+      type: bigquery

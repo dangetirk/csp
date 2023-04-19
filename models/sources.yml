@@ -1,0 +1,26 @@
+#dbt test --profiles-dir ./profiles --profile csp  
+#dbt test -s source:Product_curated.Product_curated  --profiles-dir ./profiles --profile csp 
+version: 2
+sources:
+  - name: Product_curated
+    database: "dmn01-rsksoi-bld-01-2017"  
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_curated" 
+    tables:
+      - name: Product_curated
+        description: Credit Suite Product, downstream raw table for covenant2. Covenant Mgmt
+        columns:
+          - name: AccountNumber
+            tests:
+              - not_null 
+              - unique            
+  - name: Collateral_Pledged_curated
+    database: "dmn01-rsksoi-bld-01-2017"  
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_curated" 
+    tables:
+      - name: Collateral_Pledged_curated
+        description: Credit Suite Product, downstream raw table for covenant2. Covenant Mgmt
+        columns:
+          - name: Collateral
+            tests:
+              - not_null 
+              - unique            
