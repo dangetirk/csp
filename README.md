@@ -14,11 +14,11 @@ To test the Sources:
 
     dbt test --profiles-dir ./profiles --profile csp
 
-    2. To execute the tests for particular sources
+2. To execute the tests for particular sources
 
     dbt test -s source:Product_curated.Product_curated  --profiles-dir ./profiles --profile csp
 
-    3. To execute the own sigular test (refer the test folder )
+3. To execute the own sigular test (refer the test folder )
 
     dbt test --profiles-dir ./profiles --profile csp  --select sampletest
 
