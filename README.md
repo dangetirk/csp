@@ -4,9 +4,6 @@ Welcome to your new dbt project!
 
 Try running the following commands:
 
-- dbt run
-- dbt test
-
 Connection Test:
 
 dbt debug --profiles-dir ./profiles --profile csp
