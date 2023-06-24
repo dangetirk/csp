@@ -1,26 +1,22 @@
-#dbt test --profiles-dir ./profiles --profile csp  
+#dbt test --profiles-dir ./profiles --profile csp  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_downstream_raw.rskcsp_ds_account_copy
 #dbt test -s source:Product_curated.Product_curated  --profiles-dir ./profiles --profile csp 
 version: 2
 sources:
-  - name: Product_curated
+  - name: rskcsp_ds_account_copy
     database: "dmn01-rsksoi-bld-01-2017"  
-    schema: "dmn01_rsksoi_euwe2_rsk_csp_curated" 
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_downstream_raw" 
     tables:
-      - name: Product_curated
+      - name: rskcsp_ds_account_copy
         description: Credit Suite Product 
         columns:
-          - name: AccountNumber
+          - name: Id
             tests:
-              - not_null 
-              - unique            
-  - name: Collateral_Pledged_curated
-    database: "dmn01-rsksoi-bld-01-2017"  
-    schema: "dmn01_rsksoi_euwe2_rsk_csp_curated" 
-    tables:
-      - name: Collateral_Pledged_curated
-        description: Credit Suite Product 
-        columns:
-          - name: Collateral
-            tests:
-              - not_null 
-              - unique            
+              - unique             
+            config:
+             +store_failures: true
+             +schema: dmn01_rsksoi_euwe2_rsk_csp_downstream_staging                    
+
+
+
+
+    

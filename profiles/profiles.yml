@@ -3,7 +3,7 @@ csp:
   outputs:
     dev:
       project: dmn01-rsksoi-bld-01-2017
-      dataset: dmn01_rsksoi_euwe2_rsk_csp_curated
+      dataset: dmn01_rsksoi_euwe2_rsk_csp_downstream_staging
       job_execution_timeout_seconds: 300
       job_retries: 1
       location: europe-west2
