@@ -1,0 +1,15 @@
+version: 2
+sources:
+  - name: downstream_staging
+    database: "dmn01-rsksoi-bld-01-2017" # "{{ env_var('BQ_PROJECT_ID') }}"
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_ds_staging" # "{{ env_var('BQ_STAGING_DATASET_ID') }}"
+    tables:
+      - name: rskcsp_ds_cardholder_staging
+        description: Credit Suite Product, downstream staging table for cardholder. Cardholder
+        columns:
+          - name: Id
+            tests:
+              - not_null
+
+
+              
