@@ -1,5 +1,0 @@
-Test_Name,Test Status,Total Rows,Matching Rows,Non-matching Rows,BigQuery Record Count,Ncino Record Count
-TC_cardholder,Fail,22,0.0,22.0,11.0,11.0
-Total Tests,-,1,,,,
-Total Passed,-,0,,,,
-Total Failed,-,1,,,,

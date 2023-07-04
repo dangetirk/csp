@@ -1,5 +1,8 @@
 Test_Name,Test Status,Total Rows,Matching Rows,Non-matching Rows,BigQuery Record Count,Ncino Record Count
 TC_cardholder,Fail,22,0.0,22.0,11.0,11.0
-Total Tests,-,1,,,,
+TC_legal_entities,Fail,51,0.0,51.0,25.0,26.0
+TC_limit,Fail,158,0.0,158.0,81.0,77.0
+TC_loan,Fail,96,0.0,96.0,85.0,11.0
+Total Tests,-,4,,,,
 Total Passed,-,0,,,,
-Total Failed,-,1,,,,
+Total Failed,-,4,,,,

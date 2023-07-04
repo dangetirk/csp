@@ -23,7 +23,7 @@ import os
 import numpy as np
 import collections
 from datetime import datetime
-from test_case_execution import run_test_cases
+from test_case_execution_latest import run_test_cases
 
 # Load the configuration file
 with open("config.yml", 'r') as ymlfile:

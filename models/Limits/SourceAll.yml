@@ -1,0 +1,34 @@
+version: 2
+sources:
+  - name: raw
+    database: "dmn01-rsksoi-bld-01-2017"
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_downstream_raw"
+    tables:
+      - name: rskcsp_ds_cardholder
+      - name: rskcsp_ds_limit
+      - name: rskcsp_ds_legal_entities
+      - name: rskcsp_ds_loan
+  - name: staging
+    database: "dmn01-rsksoi-bld-01-2017"
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_ds_staging"
+    tables:
+      - name: rskcsp_ds_cardholder_staging
+      - name: rskcsp_ds_limit_staging
+      - name: rskcsp_ds_legal_entities_staging
+      - name: rskcsp_ds_loan_staging
+  - name: curation
+    database: "dmn01-rsksoi-bld-01-2017"
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_ds_curation"
+    tables:    
+      - name: rskcsp_ds_cardholder_curated
+      - name: rskcsp_ds_limit_curated
+      - name: rskcsp_ds_legal_curated
+      - name: rskcsp_ds_loan_curated
+  - name: consumption
+    database: "dmn01-rsksoi-bld-01-2017"
+    schema: "dmn01_rsksoi_euwe2_rsk_csp_ds_consumption"
+    tables:    
+      - name: cardholder
+      - name: loan
+      - name: legal_entities
+      - name: limit      

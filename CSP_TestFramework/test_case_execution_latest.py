@@ -230,3 +230,16 @@ def run_test_cases(test_cases, client, sf, variables, relative_path, total_tests
             all_results.append(summary_df)
 
     return total_tests, total_passed, total_failed, all_results, results_dir
+
+def handle_nested_dicts(d):
+    """
+    Recursively replaces None values in dictionaries with 'nan'.
+    """
+    if isinstance(d, dict):
+        return {k: handle_nested_dicts(v) for k, v in d.items()}
+    elif isinstance(d, list):
+        return [handle_nested_dicts(v) for v in d]
+    elif d is None:
+        return np.nan
+    else:
+        return d

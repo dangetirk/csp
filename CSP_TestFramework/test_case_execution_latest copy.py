@@ -49,8 +49,9 @@ def run_test_cases(test_cases, client, sf, variables, relative_path, total_tests
 
             # Add the empty check
             if  salesforce_record_count == 0:  #or bigquery_record_count == 0 
-                test_status = 'SALESFORCE RESTULS EMPTY, TEST SKIPPED'
+                test_status = 'FAIL ,SALESFORCE RESTULS EMPTY, TEST SKIPPED'
                 reason = 'Salesforce dataframe is empty.'
+                total_failed += 1
                 #reason = 'BigQuery dataframe is empty.' if bigquery_record_count == 0 else 'Salesforce dataframe is empty.'
                 log_message = f"Test {test_name} Skipped: {reason}"
                 logging.info(log_message)
@@ -127,48 +128,86 @@ def run_test_cases(test_cases, client, sf, variables, relative_path, total_tests
             index_mapping_inverse = {v: k for k, v in index_mapping.items()}
             df_salesforce.rename(columns=index_mapping_inverse, inplace=True)
             df_bigquery.rename(columns=index_mapping_inverse, inplace=True)
-
+            
             # Change to lower case
             index_mapping = {k.lower(): v.lower() for k, v in index_mapping.items()}
 
-            # Perform an outer join
-            full_df = pd.merge(df_bigquery, df_salesforce, how='outer')
+            # Merge the dataframes on the index
+            merged_df = pd.merge(df_bigquery, df_salesforce, on=list(index_mapping_inverse.values()), how='outer', indicator=True)
 
-            # Create a Boolean mask where each value indicates whether the row is identical across both DataFrames
-            identical_mask = full_df.apply(lambda row: row[df_bigquery.columns].equals(row[df_salesforce.columns]), axis=1)
+            # Rename the labels of the '_merge' column
+            merged_df['_merge'] = merged_df['_merge'].map({'left_only': 'bigquery_only', 'right_only': 'salesforce_only', 'both': 'both'})
+    
+            # Reset index
+            df_bigquery.reset_index(drop=True, inplace=True)
+            df_salesforce.reset_index(drop=True, inplace=True)
 
-            # Use the mask to separate the identical and different rows
-            identical_df = full_df[identical_mask]
-            different_df = full_df[~identical_mask]
+            # Create temporary column names based on Salesforce column names
+            temp_cols = [col for col in df_salesforce.columns if col != 'index']
 
-            # Count the total, matching, and non-matching rows
-            total_rows = len(full_df)
-            matching_rows = len(identical_df)
+            # Now merge using the temporary column names
+            merged_df = pd.merge(df_bigquery, df_salesforce, on=temp_cols, how='outer', indicator=True)
+
+            # Rename the labels of the '_merge' column
+            merged_df['_merge'] = merged_df['_merge'].map({'left_only': 'bigquery_only', 'right_only': 'salesforce_only', 'both': 'both'})
+
+            # Count number of matching and non-matching rows
+            total_rows = merged_df.shape[0]
+            matching_rows = merged_df[merged_df['_merge'] == 'both'].shape[0]
             non_matching_rows = total_rows - matching_rows
+
+            # Count number of matching and non-matching fields
+            matching_fields = np.sum(merged_df['_merge'] == 'both')
+            total_fields = merged_df.size
+            non_matching_fields = total_fields - matching_fields
+
+            # Append the summary to the top of the dataframe
+            summary_df = pd.DataFrame({
+                'Total Rows': [total_rows],
+                'Matching Rows': [matching_rows],
+                'Non-matching Rows': [non_matching_rows],
+            })
+
+            # Save the summary dataframe to a CSV file
+            summary_file_path = os.path.join(results_dir, f'{test_name}_results.csv')
+            summary_df.to_csv(summary_file_path)
+
+            # Append the merged dataframe to the same CSV file
+            merged_df.to_csv(summary_file_path, mode='a')
+
+            # If you only want to see the differences, you can filter the rows where '_merge' is not 'both'
+            differences_df = merged_df[merged_df['_merge'] != 'both']
+            log_message = "Differences between datasets: {}".format(differences_df) 
+            logging.info(log_message)
+            #logging.info(differences_df)
+
+            # Check if the DataFrames are equal
+            if df_bigquery.sort_values(by=list(df_bigquery.columns)).reset_index(drop=True).equals(df_salesforce.sort_values(by=list(df_salesforce.columns)).reset_index(drop=True)):
+                log_message = "Test {} Passed: Both BigQuery and Salesforce results match.".format(test_name)
+                logging.info(log_message)
+
+            else:
+                log_message = "Test {} Failed: BigQuery and Salesforce results do not match.".format(test_name)
+                logging.info(log_message)
+                failed_tests.append(f"Test {test_name} Failed: BigQuery and Salesforce results do not match.")
+
+            # Compute total and matching rows
+            total_rows = len(merged_df)
+            matching_rows = len(merged_df[merged_df['_merge'] == 'both'])
+            non_matching_rows = total_rows - matching_rows
+            total_rows1 = bigquery_record_count + salesforce_record_count
 
             # Prepare the test status
             test_status = 'Pass' if non_matching_rows == 0 else 'Fail'
 
-            # Write the full results DataFrame to a CSV file
-            full_df.to_csv(os.path.join(results_dir, f'{test_name}_full_results.csv'), index=True)
+            # Write the results dataframe to a separate CSV file
+            merged_df.to_csv(os.path.join(results_dir, f'{test_name}_results.csv'), index=True)
 
-            # Write the different rows to a separate CSV file
-            different_df.to_csv(os.path.join(results_dir, f'{test_name}_differences.csv'), index=True)
 
-            # Log the differences between datasets
-            log_message = "Differences between datasets: {}".format(different_df) 
-            logging.info(log_message)
-
-            # Check if the DataFrames are equal
-            if test_status == 'Pass':
-                log_message = f"Test {test_name} Passed: Both BigQuery and Salesforce results match."
-            else:
-                log_message = f"Test {test_name} Failed: BigQuery and Salesforce results do not match."
-                failed_tests.append(f"Test {test_name} Failed: BigQuery and Salesforce results do not match.")
-
-            # Compute total and matching rows
-            total_rows1 = bigquery_record_count + salesforce_record_count
-
+            # If the test failed, add it to the list of failed tests
+            if not df_bigquery.sort_values(by=list(df_bigquery.columns)).reset_index(drop=True).equals(df_salesforce.sort_values(by=list(df_salesforce.columns)).reset_index(drop=True)):
+                failed_tests.append(test_name)
+            
             # Prepare the summary dataframe
             summary_df = pd.DataFrame({
                 'Test_Name': [test_name],
@@ -185,7 +224,7 @@ def run_test_cases(test_cases, client, sf, variables, relative_path, total_tests
             if test_status == 'Pass':
                 total_passed += 1
             else:
-                total_failed
+                total_failed += 1
 
             # Store the test result summary
             all_results.append(summary_df)
