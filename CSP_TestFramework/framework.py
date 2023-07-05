@@ -1,3 +1,18 @@
+#This Python script performs the following operations:
+
+#It reads the test cases from a CSV file.
+#It loops through each test case and checks if it needs to be executed.
+#For each test case to be executed, it fetches data from both BigQuery and Salesforce using the SQL queries provided in the CSV file.
+#It then handles any nested dictionaries in the Salesforce data.
+#It checks if any columns in Salesforce data are dictionaries and if so, extracts the relevant data.
+#It creates a mapping dictionary for the index columns and renames Salesforce columns to match BigQuery columns.
+#It standardizes the column names in both data sets.
+#It sorts both data sets based on index columns and resets the index.
+#It compares the two data sets and records the differences.
+#Finally, it writes the comparison results to a CSV file.
+
+#the headings in the results are based on the column names in the saleforce queries. 
+
 from simple_salesforce import Salesforce
 from google.cloud import bigquery
 from functions import flatten, handle_nested_dicts, get_sql_query
@@ -8,7 +23,7 @@ import os
 import numpy as np
 import collections
 from datetime import datetime
-from test_case_execution_latest import run_test_cases
+from test_case_execution import run_test_cases
 
 # Load the configuration file
 with open("config.yml", 'r') as ymlfile:
@@ -65,18 +80,15 @@ relative_path = os.path.dirname(os.path.abspath(__file__))
 
 # Read test cases from CSV
 test_cases = pd.read_csv(os.path.join(relative_path, csv_filename))
-test_cases.columns = test_cases.columns.str.strip()  # remove whitespace
+test_cases.columns = test_cases.columns.str.strip() #remove whitespace
 
 assert not test_cases.empty, "Test cases dataframe is empty. Check your 'tests.csv' file."
-assert all(
-    x in test_cases.columns for x in
-    ['Test Name', 'Bigquery SQL', 'salesforce SQL', 'bigquery index', 'salesforce index', 'execute', 'SQL subfolder',
-     'comments']), "Not all columns found in the dataframe. Check your 'tests.csv' file."
+assert all(x in test_cases.columns for x in ['Test Name', 'Bigquery SQL', 'salesforce SQL', 'bigquery index', 'salesforce index', 'execute', 'SQL subfolder', 'comments']), "Not all columns found in the dataframe. Check your 'tests.csv' file."
 
 # Initialize an empty list to store the failed tests
 failed_tests = []
 
-# big query variables
+#big query variables
 variables = {
     'project_ID': cfg['bigquery']['project_ID'],
     'dataset1': cfg['bigquery']['dataset1'],
@@ -87,55 +99,7 @@ variables = {
 log_message = "Loaded project_ID: {}".format(variables['project_ID'])
 logging.info(log_message)
 
-
-# In the run_test_cases function
-def run_test_cases(test_cases, client, sf, variables, relative_path, total_tests, total_passed, total_failed, all_results):
-    # Iterate over the test cases
-    for index, row in test_cases.iterrows():
-        test_name = row['Test Name']
-        bq_sql = row['Bigquery SQL']
-        sf_sql = row['salesforce SQL']
-        bq_index = row['bigquery index']
-        sf_index = row['salesforce index']
-        execute = row['execute']
-        sql_subfolder = row['SQL subfolder']
-        comments = row['comments']
-
-        # Skip the test if 'execute' is False or empty
-        if not execute:
-            continue
-
-        # Evaluate the SQL queries with variable substitution
-        bq_sql = get_sql_query(os.path.join(relative_path, sql_subfolder, bq_sql), variables)
-        sf_sql = get_sql_query(os.path.join(relative_path, sql_subfolder, sf_sql), variables)
-
-        # Execute the BigQuery and Salesforce queries
-        try:
-            # Execute BigQuery query
-            bq_job = client.query(bq_sql)
-            bq_rows = bq_job.result()
-
-            # Convert BigQuery rows to a list of dictionaries
-            bq_rows = [dict(row) for row in bq_rows]
-
-            # Handle None values in BigQuery result
-            bq_rows = handle_nested_dicts(bq_rows)
-
-            # Execute Salesforce query
-            sf_rows = sf.query_all(sf_sql)['records']
-        except Exception as e:
-            logging.error(f"Failed to execute queries for test '{test_name}': {e}")
-            failed_tests.append(test_name)
-            total_tests += 1
-            total_failed += 1
-            continue
-
-        # ... existing code ...
-
-    # ... existing code ...
-
-
-# call test case execution
+#call test case execution
 total_tests, total_passed, total_failed, all_results, results_dir = run_test_cases(
     test_cases, client, sf, variables, relative_path, total_tests, total_passed, total_failed, all_results
 )
@@ -152,16 +116,16 @@ summary_stats_df = pd.DataFrame({
     'Non-matching Rows': [np.nan, np.nan, np.nan],
     'BigQuery Record Count': [np.nan, np.nan, np.nan],  # Adjusted for the added column
     'Ncino Record Count': [np.nan, np.nan, np.nan]
-}, index=[total_tests, total_tests + 1, total_tests + 2])
+}, index=[total_tests, total_tests+1, total_tests+2])
 all_results_df = pd.concat([all_results_df, summary_stats_df])
 
 # Order the columns
-cols = ['Test_Name', 'Test Status', 'Total Rows', 'Matching Rows', 'Non-matching Rows', 'BigQuery Record Count',
-        'Ncino Record Count']
+cols = ['Test_Name', 'Test Status', 'Total Rows', 'Matching Rows', 'Non-matching Rows', 'BigQuery Record Count', 'Ncino Record Count']
 all_results_df = all_results_df[cols]
 
 # Write the merged results dataframe to a separate CSV file
 all_results_df.to_csv(os.path.join(results_dir, f'execution_report_{run_timestamp_str}.csv'), index=False)
+
 
 # After all tests have run, raise exceptions for any failed tests at the end
 if failed_tests:
