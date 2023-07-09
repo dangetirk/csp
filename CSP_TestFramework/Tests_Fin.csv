@@ -1,0 +1,12 @@
+Test Name,Bigquery SQL,salesforce SQL,bigquery index,salesforce index,execute,SQL subfolder, comments
+TC_Classification,TC_Classification_GCP_001.sql,TC_Classification_NCINO_001.sql,"[0]","[0]",1,Financials
+TC_Spread_Record_Classification,TC_Spread_Record_Classification_GCP.sql,TC_Spread_Record_Classification_NCINO.sql,"[0]","[0]",1,Financials
+TC_Spread_Record_Total_Classification,TC_Spread_Record_Total_Classification_GCP.sql,TC_Spread_Record_Total_Classification_NCINO.sql,"[0]","[0]",1,Financials
+TC_Spread_statement_period,TC_spread_statement_period_GCP.sql,TC_spread_statement_period_NCINO.sql,"[0]","[0]",1,Financials
+TC_Spread_Statement_Record_Total,TC_Spread_Statement_Record_Total_GCP.sql,TC_Spread_Statement_Record_Total_NCINO.sql,"[0]","[0]",1,Financials
+TC_spread_projections_driver,TC_spread_projections_driver_GCP.sql,TC_spread_projections_driver_NCINO.sql,"[0]","[0]",1,Financials
+TC_underwriting_bundle,TC_underwriting_bundle_GCP.sql,TC_underwriting_bundle_NCINO.sql,"[0]","[0]",1,Financials
+TC_debt_schedule,TC_debt_schedule_GCP.sql,TC_debt_schedule_NCINO.sql,"[0]","[0]",1,Financials
+TC_cardholder,TC_cardholder_GCP.sql,TC_cardholder_NCINO.sql,"[0]","[0]",1,Limits
+TC_legal_entities,TC_legal_entities_GCP.sql,TC_legal_entities_NCINO.sql,"[0]","[0]",1,Limits
+TC_limit,TC_limit_GCP.sql,TC_limit_NCINO.sql,"[0]","[0]",1,Limits
