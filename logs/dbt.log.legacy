@@ -1,0 +1,847 @@
+2023-04-18 16:18:14.295505 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:18:16.276597 (Thread-2 (worker)): unclosed <ssl.SSLSocket fd=13, family=2, type=1, proto=0, laddr=('10.198.203.25', 63167), raddr=('142.250.187.234', 443)>
+2023-04-18 16:26:52.785630 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:26:56.787987 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.203.25', 59182), raddr=('142.250.180.10', 443)>
+2023-04-18 16:26:58.803348 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.203.25', 49410), raddr=('142.250.180.10', 443)>
+2023-04-18 16:26:58.814315 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 63894), raddr=('142.250.180.10', 443)>
+2023-04-18 16:27:00.000168 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 62651), raddr=('142.250.180.10', 443)>
+2023-04-18 16:28:07.384059 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:28:10.104295 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 60358), raddr=('142.250.180.10', 443)>
+2023-04-18 16:28:30.961014 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:28:35.979667 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 49714), raddr=('142.250.180.10', 443)>
+2023-04-18 16:29:04.029996 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:32:04.131928 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:32:09.342931 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 63977), raddr=('172.217.16.234', 443)>
+2023-04-18 16:32:09.343137 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 59165), raddr=('172.217.16.234', 443)>
+2023-04-18 16:34:11.250824 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:34:16.321545 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 63569), raddr=('172.217.16.234', 443)>
+2023-04-18 16:34:32.243269 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:34:35.103303 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 49733), raddr=('172.217.16.234', 443)>
+2023-04-18 16:34:37.057722 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.203.25', 64496), raddr=('172.217.16.234', 443)>
+2023-04-18 16:37:27.097344 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:37:30.537717 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 57225), raddr=('172.217.16.234', 443)>
+2023-04-18 16:37:33.061554 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.203.25', 58558), raddr=('172.217.16.234', 443)>
+2023-04-18 16:38:02.157847 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:39:39.433420 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:42:42.365343 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:42:46.173167 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 53309), raddr=('142.250.180.10', 443)>
+2023-04-18 16:42:48.264208 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.203.25', 59769), raddr=('142.250.180.10', 443)>
+2023-04-18 16:43:11.319151 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:43:16.153468 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 54445), raddr=('142.250.180.10', 443)>
+2023-04-18 16:43:16.153980 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 59049), raddr=('142.250.180.10', 443)>
+2023-04-18 16:45:24.843304 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:45:33.109456 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:45:43.026975 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:45:48.206383 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 57925), raddr=('142.250.180.10', 443)>
+2023-04-18 16:45:50.193341 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 59221), raddr=('142.250.180.10', 443)>
+2023-04-18 16:45:52.218425 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 51258), raddr=('142.250.180.10', 443)>
+2023-04-18 16:46:17.786474 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:47:15.517324 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:47:20.592811 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.203.25', 63551), raddr=('142.250.180.10', 443)>
+2023-04-18 16:48:16.084368 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-18 16:48:19.337481 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.203.25', 56970), raddr=('142.250.180.10', 443)>
+2023-04-18 16:48:21.366434 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.203.25', 54855), raddr=('142.250.180.10', 443)>
+2023-04-18 16:48:23.538995 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.203.25', 54627), raddr=('142.250.180.10', 443)>
+2023-04-18 16:48:25.541113 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.203.25', 61402), raddr=('142.250.180.10', 443)>
+2023-04-20 07:48:40.088371 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-20 07:49:45.715763 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-20 07:49:49.158782 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 60993), raddr=('142.250.178.10', 443)>
+2023-04-20 07:49:50.266501 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 51082), raddr=('142.250.178.10', 443)>
+2023-04-20 07:49:51.330258 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60222), raddr=('142.250.178.10', 443)>
+2023-04-20 07:49:51.330756 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 52015), raddr=('142.250.178.10', 443)>
+2023-04-20 07:54:27.241511 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-20 09:06:10.570928 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-20 09:17:37.258726 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-20 09:17:40.646932 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 55269), raddr=('142.250.178.10', 443)>
+2023-04-20 09:17:41.766689 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 51366), raddr=('142.250.178.10', 443)>
+2023-04-20 09:17:42.762052 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 65529), raddr=('142.250.178.10', 443)>
+2023-04-20 09:17:42.762555 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 56345), raddr=('142.250.178.10', 443)>
+2023-04-21 14:40:36.476406 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-04-21 14:41:18.885926 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:02:30.492931 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:03:18.616580 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:04:05.014379 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:04:08.217463 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 59149), raddr=('216.58.212.234', 443)>
+2023-05-18 11:04:08.217878 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 56231), raddr=('216.58.212.234', 443)>
+2023-05-18 11:04:08.683272 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57492), raddr=('216.58.212.234', 443)>
+2023-05-18 11:04:09.897839 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 56968), raddr=('216.58.212.234', 443)>
+2023-05-18 11:05:59.802945 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:06:02.591318 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 50237), raddr=('216.58.212.234', 443)>
+2023-05-18 11:06:02.591597 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 50827), raddr=('216.58.212.234', 443)>
+2023-05-18 11:06:03.992499 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50593), raddr=('216.58.212.234', 443)>
+2023-05-18 11:06:40.516383 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:06:45.410429 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 64927), raddr=('216.58.212.234', 443)>
+2023-05-18 11:06:46.507408 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 59261), raddr=('216.58.212.234', 443)>
+2023-05-18 11:07:06.867661 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:07:09.941165 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 49948), raddr=('216.58.212.234', 443)>
+2023-05-18 11:07:09.941542 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 55919), raddr=('216.58.212.234', 443)>
+2023-05-18 11:07:11.129089 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63539), raddr=('216.58.212.234', 443)>
+2023-05-18 11:07:20.189417 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:10:27.409105 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:10:31.354228 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 55621), raddr=('216.58.212.234', 443)>
+2023-05-18 11:10:31.354618 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 51505), raddr=('216.58.212.234', 443)>
+2023-05-18 11:39:25.681189 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:39:39.171345 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:39:48.439485 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:39:56.637685 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:40:03.980784 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:40:12.175431 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:40:39.695027 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:41:02.447443 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:41:13.696499 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:41:48.238063 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:43:05.782933 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:43:13.734605 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:43:29.155780 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:44:03.254971 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:44:52.040743 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:44:55.449394 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 50663), raddr=('216.58.212.234', 443)>
+2023-05-18 11:48:18.480542 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:48:22.574477 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 53267), raddr=('216.58.212.234', 443)>
+2023-05-18 11:48:41.561644 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:48:44.692972 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 58385), raddr=('216.58.212.234', 443)>
+2023-05-18 11:48:44.693188 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 62102), raddr=('216.58.212.234', 443)>
+2023-05-18 11:49:47.045417 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:49:50.363459 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 59704), raddr=('216.58.212.234', 443)>
+2023-05-18 11:50:11.143983 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:50:14.180281 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 57983), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:00.863207 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:51:07.796912 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=12, family=2, type=1, proto=0, laddr=('192.168.0.11', 56032), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:07.797225 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=13, family=2, type=1, proto=0, laddr=('192.168.0.11', 55852), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:07.797375 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=14, family=2, type=1, proto=0, laddr=('192.168.0.11', 51587), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:07.797499 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 60446), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:10.920184 (MainThread): unclosed <ssl.SSLSocket fd=11, family=2, type=1, proto=0, laddr=('192.168.0.11', 56450), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:31.509641 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:51:39.524674 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=12, family=2, type=1, proto=0, laddr=('192.168.0.11', 57783), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:39.525279 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=13, family=2, type=1, proto=0, laddr=('192.168.0.11', 61648), raddr=('216.58.212.234', 443)>
+2023-05-18 11:51:39.525539 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 62142), raddr=('216.58.212.234', 443)>
+2023-05-18 11:54:14.978142 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-05-18 11:54:19.260120 (MainThread): unclosed <ssl.SSLSocket fd=13, family=2, type=1, proto=0, laddr=('192.168.0.11', 56584), raddr=('216.58.212.234', 443)>
+2023-05-18 11:54:21.099295 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 51358), raddr=('216.58.212.234', 443)>
+2023-05-18 11:54:24.824345 (MainThread): unclosed <ssl.SSLSocket fd=12, family=2, type=1, proto=0, laddr=('192.168.0.11', 53246), raddr=('216.58.212.234', 443)>
+2023-05-18 11:54:24.824675 (MainThread): unclosed <ssl.SSLSocket fd=14, family=2, type=1, proto=0, laddr=('192.168.0.11', 61294), raddr=('216.58.212.234', 443)>
+2023-05-18 11:54:24.824906 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 51262), raddr=('216.58.212.234', 443)>
+2023-06-28 19:35:20.826740 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 19:58:51.858125 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 19:59:54.409327 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 19:59:57.615136 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 58032), raddr=('142.250.178.10', 443)>
+2023-06-28 20:00:39.611253 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:01:07.020503 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:02:35.328945 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:04:26.469531 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:06:05.060906 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:06:46.502289 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:13:21.848223 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:13:24.816724 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 65254), raddr=('142.250.178.10', 443)>
+2023-06-28 20:14:26.816105 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:14:29.326680 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 61855), raddr=('142.250.178.10', 443)>
+2023-06-28 20:17:43.242942 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:18:06.831771 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:18:09.537305 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 52047), raddr=('142.250.178.10', 443)>
+2023-06-28 20:18:47.725133 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:19:16.014661 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:19:38.885673 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:19:57.396094 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:20:08.783286 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:20:11.535755 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 57720), raddr=('142.250.178.10', 443)>
+2023-06-28 20:21:21.162194 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:21:23.792723 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 56060), raddr=('142.250.178.10', 443)>
+2023-06-28 20:21:27.667493 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:21:29.676120 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 56631), raddr=('142.250.178.10', 443)>
+2023-06-28 20:22:31.769856 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:22:34.186842 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 60220), raddr=('142.250.178.10', 443)>
+2023-06-28 20:22:42.624668 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:22:44.547691 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 57417), raddr=('142.250.178.10', 443)>
+2023-06-28 20:23:16.085715 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:23:18.493141 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 52898), raddr=('142.250.178.10', 443)>
+2023-06-28 20:23:19.690031 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 62117), raddr=('142.250.178.10', 443)>
+2023-06-28 20:24:16.245041 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:24:18.760250 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 61870), raddr=('142.250.178.10', 443)>
+2023-06-28 20:24:19.773803 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 61503), raddr=('142.250.178.10', 443)>
+2023-06-28 20:24:32.515657 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:24:34.507140 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 51872), raddr=('142.250.178.10', 443)>
+2023-06-28 20:24:55.904873 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:24:58.417281 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 60766), raddr=('142.250.178.10', 443)>
+2023-06-28 20:25:20.643744 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:25:22.621106 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 54743), raddr=('142.250.178.10', 443)>
+2023-06-28 20:26:06.165173 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:26:20.057576 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:26:45.678910 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 20:26:48.046648 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 58224), raddr=('142.250.178.10', 443)>
+2023-06-28 21:44:44.159913 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 21:45:27.191972 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 21:46:22.091037 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 21:47:05.578606 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 21:47:23.649696 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 21:47:27.209672 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 61532), raddr=('142.250.178.10', 443)>
+2023-06-28 21:47:27.210177 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 56116), raddr=('142.250.178.10', 443)>
+2023-06-28 21:47:29.251843 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 65210), raddr=('142.250.178.10', 443)>
+2023-06-28 21:47:30.278765 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 61643), raddr=('142.250.178.10', 443)>
+2023-06-28 21:47:31.179465 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 51428), raddr=('142.250.178.10', 443)>
+2023-06-28 21:47:31.181985 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50571), raddr=('142.250.178.10', 443)>
+2023-06-28 22:01:47.944912 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:02:09.504318 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:02:13.239978 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60310), raddr=('142.250.178.10', 443)>
+2023-06-28 22:02:14.229813 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 64005), raddr=('142.250.178.10', 443)>
+2023-06-28 22:02:14.230073 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60579), raddr=('142.250.178.10', 443)>
+2023-06-28 22:02:16.020031 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 51568), raddr=('142.250.178.10', 443)>
+2023-06-28 22:02:16.839912 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 56987), raddr=('142.250.178.10', 443)>
+2023-06-28 22:02:17.671172 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 64926), raddr=('142.250.178.10', 443)>
+2023-06-28 22:54:25.557991 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:54:55.579578 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:55:40.692375 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:55:47.692204 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:58:11.423367 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:58:13.511178 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 59364), raddr=('142.250.178.10', 443)>
+2023-06-28 22:58:41.916124 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:58:44.472039 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 64297), raddr=('142.250.178.10', 443)>
+2023-06-28 22:59:54.431678 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 22:59:57.948010 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60717), raddr=('142.250.178.10', 443)>
+2023-06-28 22:59:58.831929 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 59966), raddr=('142.250.178.10', 443)>
+2023-06-28 23:01:28.285100 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:01:33.170975 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 58235), raddr=('142.250.178.10', 443)>
+2023-06-28 23:01:34.090832 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 52666), raddr=('142.250.178.10', 443)>
+2023-06-28 23:01:34.989320 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 62018), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:18.325703 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:04:21.473218 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 53584), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:23.180915 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 53235), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:24.040710 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 53538), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:24.883502 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54352), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:30.408897 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:04:33.516366 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 63741), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:34.352894 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 51905), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:35.110696 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 50984), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:36.142222 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60290), raddr=('142.250.178.10', 443)>
+2023-06-28 23:04:36.968977 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 65195), raddr=('142.250.178.10', 443)>
+2023-06-28 23:22:56.722458 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:23:01.152374 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 62313), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:03.129930 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 49350), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:04.777262 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 62022), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:06.526357 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 51491), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:06.526549 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 56752), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:08.306504 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 63650), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:08.306995 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 62454), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:10.046373 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 65498), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:10.046553 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 51343), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:11.750455 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 57223), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:11.750760 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 62854), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:13.448923 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 55078), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:14.249491 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 63300), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:15.172487 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 54465), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:16.066253 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 52201), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:16.873190 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 56973), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:18.547691 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 51851), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:18.547863 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 63347), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:20.115956 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 49638), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:20.962257 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 63894), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:21.794472 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 53372), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:21.800720 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 51853), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:21.864682 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 51806), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:21.864873 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 61236), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:21.864983 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 57867), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:21.865098 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 55625), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:23.519200 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 55496), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:24.319701 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 63373), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:25.167151 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63256), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:25.167599 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 51863), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:26.839487 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 51056), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:27.679656 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 55039), raddr=('142.250.178.10', 443)>
+2023-06-28 23:23:27.685451 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 59643), raddr=('142.250.178.10', 443)>
+2023-06-28 23:31:38.531420 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:32:39.882291 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:33:10.528739 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-28 23:33:45.259010 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 08:27:37.599622 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 08:31:01.151250 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 0)>
+2023-06-29 08:31:01.151847 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 0)>
+2023-06-29 09:31:39.430627 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 09:36:09.669187 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 09:36:12.569045 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 57678), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:15.246665 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 55779), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:17.330987 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50567), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:19.096582 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 58179), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:21.119008 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64794), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:22.688105 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51247), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:24.317259 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 65032), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:25.183046 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 51164), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:26.089432 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 64037), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:26.867589 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 61016), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:27.618601 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 50197), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:30.848478 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 51886), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:30.848819 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 49380), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:30.848970 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('192.168.0.11', 49727), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:30.849099 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=24, family=2, type=1, proto=0, laddr=('192.168.0.11', 60905), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:31.711787 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 57411), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:32.497079 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 63300), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:33.231558 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 64651), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:34.362894 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 54929), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:35.279621 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 65055), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:36.927195 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 61663), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:36.927623 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 58936), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:37.691231 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 49800), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:38.480265 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 54809), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:39.171795 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 51505), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:40.061907 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 55209), raddr=('142.250.178.10', 443)>
+2023-06-29 09:36:40.806631 (MainThread): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 63581), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:22.013867 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 09:39:33.743696 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 09:39:38.396753 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 54240), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:40.571612 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 55111), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:42.415063 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 57076), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:44.641790 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 65282), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:44.642210 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 50926), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:46.689266 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 57354), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:46.689649 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 64129), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:48.912846 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 55346), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:48.913362 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 54853), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:50.938657 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60792), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:50.938904 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 49786), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:52.865755 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 62692), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:53.994491 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 49206), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:54.933888 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 61446), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:55.815205 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 63833), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:56.701520 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 51129), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:58.623896 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 56845), raddr=('142.250.178.10', 443)>
+2023-06-29 09:39:58.624271 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 57046), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:00.622799 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 51338), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:01.664789 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 57803), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:02.671025 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 52040), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:02.677238 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 51970), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:02.776567 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 60816), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:02.777201 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 55961), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:02.777286 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 54704), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:02.777390 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 56019), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:04.547198 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 59721), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:05.455602 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 59020), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:06.331455 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 59856), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:06.331893 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 52488), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:08.281101 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 57986), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:09.224782 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 60632), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:09.231147 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 61090), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:20.316704 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 09:40:22.554278 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 53842), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:24.475892 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63957), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:26.348534 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54515), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:28.824311 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 56925), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:30.533324 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 65224), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:31.436924 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50394), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:32.381828 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 52600), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:33.294220 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 58618), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:34.230327 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 58509), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:35.972355 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57362), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:35.972767 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 56343), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:38.080779 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 53718), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:38.889558 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 54193), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:39.813054 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 49876), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:39.815742 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57656), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:42.734844 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 52263), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:43.643191 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54763), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:43.643677 (MainThread): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 58164), raddr=('142.250.178.10', 443)>
+2023-06-29 09:40:43.643932 (MainThread): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 59834), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:34.561228 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 10:06:38.896864 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 53839), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:41.594789 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 54590), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:43.636421 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 54520), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:46.399363 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 64731), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:49.068496 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('192.168.0.11', 61417), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:49.080076 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 64744), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:49.080490 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 63012), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:49.952978 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 49308), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:50.888312 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 61179), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:51.695949 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 57520), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:52.416965 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 60059), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:54.178391 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 56628), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:55.175714 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 51028), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:57.046964 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 64250), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:57.047280 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 54468), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:57.867985 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 57480), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:58.597560 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 56068), raddr=('142.250.178.10', 443)>
+2023-06-29 10:06:59.363027 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 61662), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:09.820572 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 10:07:11.623970 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 57731), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:13.015191 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60348), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:14.712995 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 53541), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:16.827000 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64643), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:18.588992 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60861), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:20.513244 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 58261), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:22.111221 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 49745), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:23.747676 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51758), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:25.598960 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 52005), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:27.443388 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54493), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:29.255624 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 62854), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:31.059803 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50694), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:32.797081 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 58320), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:34.699746 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54746), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:36.755315 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51488), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:36.755759 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 63093), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:38.347388 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 61650), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:38.347814 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 54406), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:40.056830 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51860), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:40.057303 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 56011), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:41.885638 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54926), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:42.688873 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 55817), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:43.495400 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60547), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:44.406030 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63011), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:47.489312 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 55857), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:47.489778 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 52011), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:47.490017 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 57829), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:47.490212 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=31, family=2, type=1, proto=0, laddr=('192.168.0.11', 53495), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:48.297273 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51194), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:49.263033 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60042), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:50.173227 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 53582), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:50.955098 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60026), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:51.882032 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 49914), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:52.722802 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63130), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:53.510398 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50054), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:55.473659 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 54564), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:56.388706 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 56558), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:57.315062 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 64733), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:58.318428 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 54517), raddr=('142.250.178.10', 443)>
+2023-06-29 10:07:59.327275 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 56278), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:01.220139 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 54308), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:01.220516 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 59648), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:02.974523 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 56792), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:03.860676 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 59727), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:04.560139 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 52626), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:04.568244 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 55409), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:05.308132 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 57795), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:06.120785 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 61295), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:06.965208 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 54026), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:07.697208 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 62648), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:08.392771 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 63964), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:09.212182 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 60822), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:10.726210 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 64969), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:10.726619 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 49821), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:11.854502 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 59415), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:12.748342 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 52182), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:13.725719 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 62740), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:14.508414 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 52777), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:17.199480 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=31, family=2, type=1, proto=0, laddr=('192.168.0.11', 49824), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:17.210582 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 50672), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:17.210928 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=30, family=2, type=1, proto=0, laddr=('192.168.0.11', 65038), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.073774 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 56954), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074003 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 62824), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074083 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 57308), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074169 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 54392), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074241 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 59053), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074310 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 58799), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074381 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 51888), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074450 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('192.168.0.11', 59917), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074516 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=24, family=2, type=1, proto=0, laddr=('192.168.0.11', 60982), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074585 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=25, family=2, type=1, proto=0, laddr=('192.168.0.11', 52834), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074646 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=26, family=2, type=1, proto=0, laddr=('192.168.0.11', 62128), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074709 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=27, family=2, type=1, proto=0, laddr=('192.168.0.11', 58934), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074771 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=28, family=2, type=1, proto=0, laddr=('192.168.0.11', 61632), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074876 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50302), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:18.074977 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=29, family=2, type=1, proto=0, laddr=('192.168.0.11', 63320), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:20.547739 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 64171), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:20.555974 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57175), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:20.556442 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 52203), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:21.642047 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60242), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:22.415925 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64956), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:24.683198 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60242), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:24.683665 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 62671), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:25.406000 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60766), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:26.398634 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 49176), raddr=('142.250.178.10', 443)>
+2023-06-29 10:08:27.369667 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 59368), raddr=('142.250.178.10', 443)>
+2023-06-29 11:03:51.504962 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 11:03:55.453393 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 64748), raddr=('142.250.178.10', 443)>
+2023-06-29 11:03:57.462049 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60552), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:00.099666 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 62343), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:01.934860 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64092), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:03.878668 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60536), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:05.641015 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64194), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:07.253122 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51124), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:10.218215 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('192.168.0.11', 55381), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:11.082910 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('192.168.0.11', 62413), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:11.091529 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 56879), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:11.091975 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 49288), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:12.069921 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 62363), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:12.942455 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54480), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:13.859875 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64334), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:14.784419 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 56513), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:18.086356 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54700), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:18.088857 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 60922), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:18.090474 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('192.168.0.11', 50407), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:18.091820 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=24, family=2, type=1, proto=0, laddr=('192.168.0.11', 59819), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:18.922129 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 62410), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:19.746373 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51358), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:20.668747 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 55543), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:22.327176 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 50594), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:23.308599 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 65004), raddr=('142.250.178.10', 443)>
+2023-06-29 11:04:24.454491 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=22, family=2, type=1, proto=0, laddr=('192.168.0.11', 56589), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:05.900778 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 11:06:08.013016 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 54570), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:09.666545 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63938), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:11.876023 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57262), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:11.876487 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 52672), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:14.646850 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51315), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:14.647315 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 61623), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:16.281676 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60966), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:16.282205 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 49957), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:17.358857 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 56054), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:19.249229 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54281), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:20.657143 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64849), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:21.593310 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 61499), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:22.524204 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 51687), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:25.292426 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 53357), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:26.302921 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 52414), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:26.311336 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60180), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:26.311746 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 62184), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:27.135496 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54917), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:28.120999 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57402), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:28.943544 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 55631), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:29.758468 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 49508), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:32.347605 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 62061), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:33.181972 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57984), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:33.182374 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 60062), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:33.182620 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 63600), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:34.127687 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 54898), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:35.859240 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 59853), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:35.859748 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 59231), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:36.944876 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 58364), raddr=('142.250.178.10', 443)>
+2023-06-29 11:06:37.751075 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63241), raddr=('142.250.178.10', 443)>
+2023-06-29 13:02:29.683726 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 13:02:32.281507 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 49406), raddr=('142.250.178.10', 443)>
+2023-06-29 13:02:55.667701 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-06-29 13:02:57.461120 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 55916), raddr=('142.250.178.10', 443)>
+2023-07-04 14:21:48.523692 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-04 14:21:59.040095 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 49768), raddr=('142.250.180.10', 443)>
+2023-07-04 14:21:59.040538 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55224), raddr=('142.250.180.10', 443)>
+2023-07-04 14:22:04.287768 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53067), raddr=('142.250.180.10', 443)>
+2023-07-04 14:22:04.288240 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63571), raddr=('142.250.180.10', 443)>
+2023-07-04 14:22:07.423293 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50713), raddr=('142.250.180.10', 443)>
+2023-07-04 14:22:25.128733 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-04 14:22:32.177563 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54194), raddr=('142.250.180.10', 443)>
+2023-07-04 14:22:32.178085 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 52019), raddr=('142.250.180.10', 443)>
+2023-07-04 14:22:43.607091 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-04 14:23:11.863927 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-04 14:29:35.676774 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-04 14:29:39.519884 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 50302), raddr=('142.250.178.10', 443)>
+2023-07-04 14:29:44.645372 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64999), raddr=('142.250.178.10', 443)>
+2023-07-04 14:29:51.258132 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50194), raddr=('142.250.178.10', 443)>
+2023-07-04 14:29:58.089024 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53253), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:02.940152 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53987), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:08.015311 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61654), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:13.795073 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53553), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:17.537458 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57628), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:20.040552 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 56196), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:26.186600 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=24, family=2, type=1, proto=0, laddr=('10.198.198.86', 50555), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:29.152420 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=24, family=2, type=1, proto=0, laddr=('10.198.198.86', 58516), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:29.161154 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 49635), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:29.161425 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('10.198.198.86', 50945), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:31.056695 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64456), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:32.878080 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61746), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:35.604454 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64107), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:37.731340 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54508), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:46.828872 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 59785), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:46.832104 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('10.198.198.86', 59235), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:46.834439 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=24, family=2, type=1, proto=0, laddr=('10.198.198.86', 53753), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:46.835118 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=25, family=2, type=1, proto=0, laddr=('10.198.198.86', 64139), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:48.727417 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 49484), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:50.668795 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52174), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:52.590272 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52786), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:56.803294 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('10.198.198.86', 60007), raddr=('142.250.178.10', 443)>
+2023-07-04 14:30:59.033912 (MainThread): unclosed <ssl.SSLSocket fd=23, family=2, type=1, proto=0, laddr=('10.198.198.86', 60026), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:17.477213 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-04 14:34:23.829745 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63591), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:23.830320 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 54624), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:27.911936 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 58828), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:32.742548 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 62947), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:36.814176 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50610), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:41.733871 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 58689), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:41.734331 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 60788), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:42.146673 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 50398), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:42.146939 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 57414), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:42.147030 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 57636), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:46.173547 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54372), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:50.302252 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 62115), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:50.302677 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 52032), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:52.267433 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 49787), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:54.127064 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 52524), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:55.897459 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61839), raddr=('142.250.178.10', 443)>
+2023-07-04 14:34:58.390544 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56393), raddr=('142.250.178.10', 443)>
+2023-07-04 14:35:00.097189 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63184), raddr=('142.250.178.10', 443)>
+2023-07-04 14:35:01.938298 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53532), raddr=('142.250.178.10', 443)>
+2023-07-04 14:35:03.730982 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63673), raddr=('142.250.178.10', 443)>
+2023-07-04 14:35:05.378175 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61159), raddr=('142.250.178.10', 443)>
+2023-07-05 10:13:22.570977 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 10:13:30.031716 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63133), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:30.032821 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 60916), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:34.405751 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53688), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:38.394212 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61250), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:42.061081 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54290), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:47.148449 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 63468), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:47.148642 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 61378), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:47.464047 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 63374), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:47.464263 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 57755), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:47.464349 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 53961), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:51.455371 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 57817), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:55.577291 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 58331), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:55.577448 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 63045), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:57.570428 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51893), raddr=('142.250.180.10', 443)>
+2023-07-05 10:13:59.235031 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51058), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:00.903083 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51977), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:02.678887 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53551), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:04.464459 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 55763), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:06.247880 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 50038), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:07.806167 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51086), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:09.504898 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 49466), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:15.214359 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 49394), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:15.214516 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 49378), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:15.214606 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 57820), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:18.507493 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55499), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:20.251533 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 49939), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:21.894037 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 52541), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:23.472844 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 50624), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:29.211264 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 57839), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:29.215203 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 61318), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:29.215385 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 53628), raddr=('142.250.180.10', 443)>
+2023-07-05 10:14:31.032440 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55091), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:06.990814 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 10:15:14.623892 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53606), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:14.624108 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 60928), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:19.134112 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 49605), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:22.759377 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 49268), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:26.056630 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55788), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:30.805903 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 58966), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:30.806072 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 58091), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:31.135697 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 49908), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:31.135902 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54851), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:31.135987 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 61948), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:34.442968 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56992), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:38.219431 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61993), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:38.219586 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 57475), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:39.804597 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 59008), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:42.183535 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63041), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:43.928819 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 64722), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:45.566057 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53248), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:47.262736 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51531), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:48.927156 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63690), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:50.691014 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61166), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:52.306527 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 50041), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:57.645953 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54993), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:57.646159 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 51283), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:57.646262 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 53422), raddr=('142.250.180.10', 443)>
+2023-07-05 10:15:59.359876 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 60128), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:00.964962 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61599), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:02.836154 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56396), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:04.773964 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61309), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:06.445944 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56925), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:11.414774 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 60809), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:11.418618 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51316), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:11.418790 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 59096), raddr=('142.250.180.10', 443)>
+2023-07-05 10:16:13.204533 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 59875), raddr=('142.250.180.10', 443)>
+2023-07-05 10:34:16.635388 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 10:34:23.469681 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54875), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:23.470322 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 57415), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:27.670021 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52436), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:33.019647 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53841), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:37.138651 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64854), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:41.670927 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64995), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:41.671465 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 58586), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:42.091384 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 61054), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:42.091613 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 57231), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:42.091696 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 56523), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:46.383814 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54205), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:50.880384 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63992), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:50.880822 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 53146), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:52.710714 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53397), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:54.473030 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54511), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:56.179501 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61403), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:57.767143 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 52047), raddr=('142.250.200.10', 443)>
+2023-07-05 10:34:59.445751 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 59189), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:01.207275 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61329), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:02.942714 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51700), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:04.680625 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56035), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:09.784917 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 57718), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:09.785355 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 50681), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:09.785553 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 56532), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:13.157808 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 61630), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:15.455460 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 50916), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:17.247179 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 58057), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:19.585974 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55269), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:24.761911 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 49950), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:24.770577 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 50134), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:24.770959 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 62500), raddr=('142.250.200.10', 443)>
+2023-07-05 10:35:26.470520 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 53490), raddr=('142.250.200.10', 443)>
+2023-07-05 11:50:05.679831 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 11:50:15.969284 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61503), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:15.971309 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55764), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:22.166992 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 62107), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:26.353061 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50275), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:30.253925 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55231), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:34.980507 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 62417), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:34.981894 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 52874), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:36.246264 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 61725), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:36.246510 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54831), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:36.246593 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 61768), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:40.716644 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61238), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:45.339212 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 57646), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:45.341397 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 57672), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:47.224402 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63061), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:48.954251 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61100), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:50.869706 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 55795), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:53.581295 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53384), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:55.390136 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 64004), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:57.103871 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 49175), raddr=('142.250.178.10', 443)>
+2023-07-05 11:50:58.827708 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 53053), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:00.609729 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61305), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:07.009618 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 59211), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:07.010116 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 63994), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:07.010382 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 56338), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:10.613585 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 53852), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:12.319745 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 57501), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:13.991911 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55582), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:19.314338 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 62348), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:20.991613 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 58596), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:21.000693 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 52968), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:21.000976 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 50227), raddr=('142.250.178.10', 443)>
+2023-07-05 11:51:22.867158 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 52880), raddr=('142.250.178.10', 443)>
+2023-07-05 12:08:13.932207 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 12:08:33.445966 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 12:08:39.533735 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61483), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:39.534024 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 51860), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:44.305438 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 51911), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:44.305910 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54604), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:49.374231 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52252), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:49.376560 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 63760), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:53.250986 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55922), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:53.251481 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51798), raddr=('142.250.187.234', 443)>
+2023-07-05 12:08:56.026007 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61460), raddr=('142.250.187.234', 443)>
+2023-07-05 12:09:00.984552 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64189), raddr=('142.250.187.234', 443)>
+2023-07-05 12:09:05.629952 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50866), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:13.424657 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 65404), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:13.425075 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 61405), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:13.425270 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('10.198.198.86', 61387), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:15.157313 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52531), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:16.894980 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 60638), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:18.603388 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54352), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:20.418018 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 49822), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:22.176790 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53945), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:24.267740 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52122), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:25.940757 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54273), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:27.646500 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54149), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:29.392412 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52867), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:31.245578 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 49264), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:34.812397 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 65089), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:34.812832 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 53239), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:36.543067 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 62681), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:38.976436 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 56249), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:40.886712 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57246), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:42.627465 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55807), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:46.224411 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54457), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:46.224809 (MainThread): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 55553), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:46.286710 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 55262), raddr=('142.250.187.234', 443)>
+2023-07-05 12:09:46.286937 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 60942), raddr=('142.250.180.10', 443)>
+2023-07-05 12:09:46.287029 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 59980), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:12.495946 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 12:10:19.350441 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 55929), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:19.351315 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 56948), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:24.394265 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52054), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:24.399448 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 60724), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:27.708903 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 63314), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:32.388468 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 59584), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:39.117385 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 63071), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:43.580896 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50015), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:48.002045 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52748), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:48.097741 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 61313), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:48.097959 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 55705), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:48.098043 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 53787), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:48.098123 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 51502), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:51.846580 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57908), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:54.371650 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 63706), raddr=('142.250.180.10', 443)>
+2023-07-05 12:10:56.219497 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 58029), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:03.038705 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61687), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:03.039518 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 49286), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:03.039982 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 50643), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:03.040282 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 64205), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:04.780468 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61869), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:06.521635 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 56417), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:09.086117 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 63132), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:10.771835 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61264), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:12.485195 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55070), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:14.204146 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 60300), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:15.968989 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 60626), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:17.788393 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55119), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:19.597996 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57955), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:21.386573 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57815), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:23.821031 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 63274), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:25.578567 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55683), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:29.063854 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 60057), raddr=('142.250.180.10', 443)>
+2023-07-05 12:11:29.064168 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 50677), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:28.661823 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-05 12:21:35.242401 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56603), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:35.242924 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 52287), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:40.926996 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57835), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:40.927437 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 52603), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:44.077868 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64595), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:48.926363 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54823), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:53.830675 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 61830), raddr=('142.250.180.10', 443)>
+2023-07-05 12:21:58.428209 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 60462), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:03.442359 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50693), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:03.533926 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 60857), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:03.534162 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('10.198.198.86', 50708), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:03.534251 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('10.198.198.86', 59087), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:03.534329 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('10.198.198.86', 49841), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:07.598541 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 62476), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:11.827342 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 54881), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:11.827679 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 56791), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:15.229579 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 64279), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:16.952933 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 62943), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:18.710831 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64060), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:18.713629 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 60917), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:21.410173 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 65032), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:23.963220 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 51402), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:25.708238 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 50704), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:27.375619 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 57317), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:29.070654 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 58038), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:32.847383 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 59647), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:32.847914 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 51582), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:34.578686 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 55317), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:36.317144 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 52452), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:38.080715 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 59350), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:39.771214 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 56805), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:41.595944 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 53854), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:45.259725 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('10.198.198.86', 64421), raddr=('142.250.180.10', 443)>
+2023-07-05 12:22:45.260178 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('10.198.198.86', 54621), raddr=('142.250.180.10', 443)>
+2023-07-09 19:37:01.228721 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-09 19:37:49.176949 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-09 19:40:11.883774 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-09 19:41:01.679937 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-09 19:41:07.843320 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-09 19:42:18.075567 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-07-09 19:42:22.945567 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 56944), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:22.946134 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 56909), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:25.187363 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57440), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:27.335581 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 63311), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:29.135002 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 62803), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:31.117711 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 57840), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:31.118213 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 54596), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:33.102212 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 59065), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:33.102687 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 59901), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:35.118160 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50450), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:35.118696 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 60849), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:35.856372 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 64546), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:36.848765 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 49938), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:37.771682 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 60016), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:39.587533 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 54712), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:40.418953 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 54056), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:41.355643 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 63312), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:42.130329 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 62620), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:42.970730 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 56271), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:43.761589 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 57347), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:44.616195 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 55320), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:47.258232 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 58620), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:48.091634 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 64731), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:48.095932 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 57231), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:48.096224 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 52062), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:49.240908 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 56294), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:51.740980 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 55312), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:51.741439 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=20, family=2, type=1, proto=0, laddr=('192.168.0.11', 58791), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:51.741622 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=21, family=2, type=1, proto=0, laddr=('192.168.0.11', 56539), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:52.671126 (MainThread): unclosed <ssl.SSLSocket fd=19, family=2, type=1, proto=0, laddr=('192.168.0.11', 52420), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:52.742048 (MainThread): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.11', 63351), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:52.742271 (MainThread): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.11', 57318), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:52.742352 (MainThread): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.11', 58121), raddr=('142.250.178.10', 443)>
+2023-07-09 19:42:52.742462 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.11', 50539), raddr=('142.250.178.10', 443)>
