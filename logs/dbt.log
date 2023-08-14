@@ -6574,3 +6574,651 @@ FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_l
 [0m12:16:00.694194 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
 [0m12:16:00.694352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c3aa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126951b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x14421f890>]}
 [0m12:16:00.694471 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-08-14 12:17:00.603764 | 00160d52-570d-4076-a853-0be20532f1b8 ==============================
+[0m12:17:00.603764 [info ] [MainThread]: Running with dbt=1.4.5
+[0m12:17:00.604840 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/Ratna-Kumar.Dangeti/Documents/GitHub/csp/profiles', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'profile': 'curated', 'indirect_selection': 'eager', 'select': ['UpstreamToDownstream.DV'], 'which': 'test', 'rpc_method': 'test'}
+[0m12:17:00.604947 [debug] [MainThread]: Tracking: tracking
+[0m12:17:00.614949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x139bf5d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b68c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x139bf5990>]}
+[0m12:17:00.632680 [debug] [MainThread]: checksum: 1bb0889d20faa5b914c1d11fb77ce2d55a685dc40c9b4db3bc6fe92db82a5315, vars: {}, profile: curated, target: None, version: 1.4.5
+[0m12:17:00.741969 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:17:00.742136 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:17:00.750073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00160d52-570d-4076-a853-0be20532f1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x139956bd0>]}
+[0m12:17:00.782669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00160d52-570d-4076-a853-0be20532f1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13add4290>]}
+[0m12:17:00.782911 [info ] [MainThread]: Found 0 models, 649 tests, 0 snapshots, 0 analyses, 732 macros, 0 operations, 0 seed files, 35 sources, 0 exposures, 0 metrics
+[0m12:17:00.783058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00160d52-570d-4076-a853-0be20532f1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13af83e50>]}
+[0m12:17:00.787712 [info ] [MainThread]: 
+[0m12:17:00.788650 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:17:00.789010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00160d52-570d-4076-a853-0be20532f1b8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13af8d010>]}
+[0m12:17:00.789337 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:17:00.789461 [info ] [MainThread]: 
+[0m12:17:00.791180 [debug] [Thread-1 (]: Began running node test.csp.cur_connection
+[0m12:17:00.791357 [info ] [Thread-1 (]: 1 of 4 START test cur_connection ............................................... [RUN]
+[0m12:17:00.791743 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.csp.cur_connection'
+[0m12:17:00.791845 [debug] [Thread-1 (]: Began compiling node test.csp.cur_connection
+[0m12:17:00.792988 [debug] [Thread-1 (]: Writing injected SQL for node "test.csp.cur_connection"
+[0m12:17:00.793368 [debug] [Thread-1 (]: Timing info for test.csp.cur_connection (compile): 2023-08-14 12:17:00.791917 => 2023-08-14 12:17:00.793328
+[0m12:17:00.793487 [debug] [Thread-1 (]: Began executing node test.csp.cur_connection
+[0m12:17:00.802320 [debug] [Thread-1 (]: Writing runtime sql for node "test.csp.cur_connection"
+[0m12:17:00.802693 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:17:01.148599 [debug] [Thread-1 (]: On test.csp.cur_connection: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "curated", "target_name": "dev", "node_id": "test.csp.cur_connection"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      select 1 from (SELECT
+ llc_bi__connected_from__c
+,llc_bi__connected_to__c
+,llc_bi__certifying_individual__c
+,LLC_BI__Connection_Role__c
+,ccs_is_key_account_party__c
+,ccs_is_signatory__c
+,ccs_is_org_lead__c
+,llc_bi__uid__c
+,ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated
+except distinct
+
+
+SELECT
+ Relationship	llc_bi__connected_from__c
+,RelationshipName	llc_bi__connected_to__c
+,CertifyingIndividual	llc_bi__certifying_individual__c
+,Role	LLC_BI__Connection_Role__c
+,KeyAccountParty	ccs_is_key_account_party__c
+,Signatory	ccs_is_signatory__c
+,IsORGLead	ccs_is_org_lead__c
+,UID	llc_bi__uid__c
+,ORGLead	ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_Connection 
+where Relationship in (select llc_bi__connected_from__c from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated))
+
+union all
+select 1 from (
+
+SELECT
+ Relationship	llc_bi__connected_from__c
+,RelationshipName	llc_bi__connected_to__c
+,CertifyingIndividual	llc_bi__certifying_individual__c
+,Role	LLC_BI__Connection_Role__c
+,KeyAccountParty	ccs_is_key_account_party__c
+,Signatory	ccs_is_signatory__c
+,IsORGLead	ccs_is_org_lead__c
+,UID	llc_bi__uid__c
+,ORGLead	ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_Connection 
+where Relationship in (select llc_bi__connected_from__c from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated)
+except distinct 
+SELECT
+ llc_bi__connected_from__c
+,llc_bi__connected_to__c
+,llc_bi__certifying_individual__c
+,LLC_BI__Connection_Role__c
+,ccs_is_key_account_party__c
+,ccs_is_signatory__c
+,ccs_is_org_lead__c
+,llc_bi__uid__c
+,ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated)
+      
+    ) dbt_internal_test
+[0m12:17:02.466926 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dmn01-rsksoi-bld-01-2017&j=bq:europe-west2:f3bcb818-3344-4184-a60b-2bae8cbc5958&page=queryresults
+[0m12:17:02.470336 [debug] [Thread-1 (]: Timing info for test.csp.cur_connection (execute): 2023-08-14 12:17:00.793547 => 2023-08-14 12:17:02.470152
+[0m12:17:02.471624 [info ] [Thread-1 (]: 1 of 4 PASS cur_connection ..................................................... [[32mPASS[0m in 1.68s]
+[0m12:17:02.474061 [debug] [Thread-1 (]: Finished running node test.csp.cur_connection
+[0m12:17:02.474524 [debug] [Thread-1 (]: Began running node test.csp.cur_customer
+[0m12:17:02.475028 [info ] [Thread-1 (]: 2 of 4 START test cur_customer ................................................. [RUN]
+[0m12:17:02.475835 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.csp.cur_customer'
+[0m12:17:02.476104 [debug] [Thread-1 (]: Began compiling node test.csp.cur_customer
+[0m12:17:02.479331 [debug] [Thread-1 (]: Writing injected SQL for node "test.csp.cur_customer"
+[0m12:17:02.480340 [debug] [Thread-1 (]: Timing info for test.csp.cur_customer (compile): 2023-08-14 12:17:02.476276 => 2023-08-14 12:17:02.480279
+[0m12:17:02.480557 [debug] [Thread-1 (]: Began executing node test.csp.cur_customer
+[0m12:17:02.483288 [debug] [Thread-1 (]: Writing runtime sql for node "test.csp.cur_customer"
+[0m12:17:02.483994 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:17:02.484266 [debug] [Thread-1 (]: On test.csp.cur_customer: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "curated", "target_name": "dev", "node_id": "test.csp.cur_customer"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      select 1 from (
+SELECT
+ccs_country_of_incorporation__c
+,llc_bi__lookupkey__c
+,name
+,type
+,ccs_segment__c
+,ccs_sic_description__c
+,shippingstreet
+,shippingcity
+,shippingstate
+,shippingcountry
+,shippingpostalcode
+,accountnumber
+,ccs_bank_entity__c
+,ccs_bsu_rm_name__c
+,ccs_company_registration_number__c
+,ccs_credit_officer__c
+,ccs_date_commenced_trading__c
+,ccs_date_of_association__c
+,ccs_oucode__c
+,ccs_relationshiptradingname__c
+,ccs_rfi_flag__c
+,ownerid
+,ccs_sort_code__c
+,ccs_support_indicator__c
+,ccs_cmdid__c
+,recordtypeid
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_collections_indicator__c
+,ccs_country_of_registration__c
+,ccs_dateofbirth__c
+,ccs_defaultflag__c
+,ccs_is_part_of_org__c
+,ccs_kyb_status__c
+,ccs_registered_charity_number__c
+,llc_bi__status__c
+,ccs_monthly_loan_repayment_limit__c
+,ccs_available_overdraft__c
+,ccs_reason_codes__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated
+
+except distinct
+
+SELECT
+CountryOfIncorporation	ccs_country_of_incorporation__c
+,OCISPartyID	llc_bi__lookupkey__c
+,RelationshipName	name
+,RelationshipType	type
+,Segment	ccs_segment__c
+,SICCodeDescription	ccs_sic_description__c
+,ShippingStreet	shippingstreet
+,ShippingCity	shippingcity
+,ShippingState	shippingstate
+,ShippingCountry	shippingcountry
+,ShippingPostalCode	shippingpostalcode
+,AccountNumber	accountnumber
+,BankEntity	ccs_bank_entity__c
+,BSURMName	ccs_bsu_rm_name__c
+,CompanyRegistrationNumber	ccs_company_registration_number__c
+,CreditOfficer	ccs_credit_officer__c
+,DateCommencedTrading	ccs_date_commenced_trading__c
+,DateOfAssociation	ccs_date_of_association__c
+,OUCode	ccs_oucode__c
+,RelationshipTradingName	ccs_relationshiptradingname__c
+,RFIFlag	ccs_rfi_flag__c
+,RMName	ownerid
+,SortCode	ccs_sort_code__c
+,SupportIndicator	ccs_support_indicator__c
+,CMDID	ccs_cmdid__c
+,RelationshipRecordType	recordtypeid
+,Id	id
+,CreatedDate	createddate
+,CreatedBy	createdbyid
+,LastModifiedDate	lastmodifieddate
+,LastModifiedBy	lastmodifiedbyid
+,CollectionsIndicator	ccs_collections_indicator__c
+,CountryofRegistration	ccs_country_of_registration__c
+,DateOfBirth	ccs_dateofbirth__c
+,DefaultFlag	ccs_defaultflag__c
+,isPartOfOrg	ccs_is_part_of_org__c
+,KYBStatus	ccs_kyb_status__c
+,RegisteredCharityNumber	ccs_registered_charity_number__c
+,Status	llc_bi__status__c
+,MonthlyLoanRepaymentLimit	ccs_monthly_loan_repayment_limit__c
+,AvailableOverdraft	ccs_available_overdraft__c
+,ReasonCodes	ccs_reason_codes__c
+FROM  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_customer
+where RelationshipName in ( select name from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated))
+
+UNION ALL
+
+SELECT 1 FROM (
+
+SELECT
+CountryOfIncorporation	ccs_country_of_incorporation__c
+,OCISPartyID	llc_bi__lookupkey__c
+,RelationshipName	name
+,RelationshipType	type
+,Segment	ccs_segment__c
+,SICCodeDescription	ccs_sic_description__c
+,ShippingStreet	shippingstreet
+,ShippingCity	shippingcity
+,ShippingState	shippingstate
+,ShippingCountry	shippingcountry
+,ShippingPostalCode	shippingpostalcode
+,AccountNumber	accountnumber
+,BankEntity	ccs_bank_entity__c
+,BSURMName	ccs_bsu_rm_name__c
+,CompanyRegistrationNumber	ccs_company_registration_number__c
+,CreditOfficer	ccs_credit_officer__c
+,DateCommencedTrading	ccs_date_commenced_trading__c
+,DateOfAssociation	ccs_date_of_association__c
+,OUCode	ccs_oucode__c
+,RelationshipTradingName	ccs_relationshiptradingname__c
+,RFIFlag	ccs_rfi_flag__c
+,RMName	ownerid
+,SortCode	ccs_sort_code__c
+,SupportIndicator	ccs_support_indicator__c
+,CMDID	ccs_cmdid__c
+,RelationshipRecordType	recordtypeid
+,Id	id
+,CreatedDate	createddate
+,CreatedBy	createdbyid
+,LastModifiedDate	lastmodifieddate
+,LastModifiedBy	lastmodifiedbyid
+,CollectionsIndicator	ccs_collections_indicator__c
+,CountryofRegistration	ccs_country_of_registration__c
+,DateOfBirth	ccs_dateofbirth__c
+,DefaultFlag	ccs_defaultflag__c
+,isPartOfOrg	ccs_is_part_of_org__c
+,KYBStatus	ccs_kyb_status__c
+,RegisteredCharityNumber	ccs_registered_charity_number__c
+,Status	llc_bi__status__c
+,MonthlyLoanRepaymentLimit	ccs_monthly_loan_repayment_limit__c
+,AvailableOverdraft	ccs_available_overdraft__c
+,ReasonCodes	ccs_reason_codes__c
+FROM  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_customer
+where RelationshipName in ( select name from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated)
+
+except distinct
+
+SELECT
+ccs_country_of_incorporation__c
+,llc_bi__lookupkey__c
+,name
+,type
+,ccs_segment__c
+,ccs_sic_description__c
+,shippingstreet
+,shippingcity
+,shippingstate
+,shippingcountry
+,shippingpostalcode
+,accountnumber
+,ccs_bank_entity__c
+,ccs_bsu_rm_name__c
+,ccs_company_registration_number__c
+,ccs_credit_officer__c
+,ccs_date_commenced_trading__c
+,ccs_date_of_association__c
+,ccs_oucode__c
+,ccs_relationshiptradingname__c
+,ccs_rfi_flag__c
+,ownerid
+,ccs_sort_code__c
+,ccs_support_indicator__c
+,ccs_cmdid__c
+,recordtypeid
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_collections_indicator__c
+,ccs_country_of_registration__c
+,ccs_dateofbirth__c
+,ccs_defaultflag__c
+,ccs_is_part_of_org__c
+,ccs_kyb_status__c
+,ccs_registered_charity_number__c
+,llc_bi__status__c
+,ccs_monthly_loan_repayment_limit__c
+,ccs_available_overdraft__c
+,ccs_reason_codes__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated)
+      
+    ) dbt_internal_test
+[0m12:17:03.616622 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dmn01-rsksoi-bld-01-2017&j=bq:europe-west2:4bd555cb-258c-4fbf-99fa-3a85193ffd6c&page=queryresults
+[0m12:17:03.618211 [debug] [Thread-1 (]: Timing info for test.csp.cur_customer (execute): 2023-08-14 12:17:02.480715 => 2023-08-14 12:17:03.618073
+[0m12:17:03.620028 [info ] [Thread-1 (]: 2 of 4 PASS cur_customer ....................................................... [[32mPASS[0m in 1.14s]
+[0m12:17:03.620706 [debug] [Thread-1 (]: Finished running node test.csp.cur_customer
+[0m12:17:03.621099 [debug] [Thread-1 (]: Began running node test.csp.cur_entity-involvement
+[0m12:17:03.621491 [info ] [Thread-1 (]: 3 of 4 START test cur_entity-involvement ....................................... [RUN]
+[0m12:17:03.622443 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.csp.cur_entity-involvement'
+[0m12:17:03.622711 [debug] [Thread-1 (]: Began compiling node test.csp.cur_entity-involvement
+[0m12:17:03.625561 [debug] [Thread-1 (]: Writing injected SQL for node "test.csp.cur_entity-involvement"
+[0m12:17:03.626336 [debug] [Thread-1 (]: Timing info for test.csp.cur_entity-involvement (compile): 2023-08-14 12:17:03.622889 => 2023-08-14 12:17:03.626278
+[0m12:17:03.626558 [debug] [Thread-1 (]: Began executing node test.csp.cur_entity-involvement
+[0m12:17:03.629514 [debug] [Thread-1 (]: Writing runtime sql for node "test.csp.cur_entity-involvement"
+[0m12:17:03.630400 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:17:03.630729 [debug] [Thread-1 (]: On test.csp.cur_entity-involvement: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "curated", "target_name": "dev", "node_id": "test.csp.cur_entity-involvement"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      select 1 from (
+SELECT
+id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,llc_bi__account__c
+,llc_bi__borrower_type__c
+,llc_bi__contingent_type__c
+,llc_bi__contingent_amount__c
+,recordtypeid
+,llc_bi__loan__c
+,llc_bi__product_package__c
+,name
+,currencyisocode
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_legal_entities_curated
+except distinct
+SELECT
+	Id	id
+,	Created_Date	createddate
+,	Created_By	createdbyid
+,	Last_Modified_Date	lastmodifieddate
+,	Last_Modified_By	lastmodifiedbyid
+,	Relationship_Name	llc_bi__account__c
+,	Borrower_Type	llc_bi__borrower_type__c
+,	Contingent_Type	llc_bi__contingent_type__c
+,	Contingent_Amount	llc_bi__contingent_amount__c
+,	Record_Type	recordtypeid
+,	Facility	llc_bi__loan__c
+,	Product_Package	llc_bi__product_package__c
+,	Entity_Auto_Number	name
+,	Currency	currencyisocode
+
+FROM  `dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_entity-involvement`
+where id in (select id from  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_legal_entities_curated))
+union all
+
+select 1 from (
+
+SELECT
+	Id	id
+,	Created_Date	createddate
+,	Created_By	createdbyid
+,	Last_Modified_Date	lastmodifieddate
+,	Last_Modified_By	lastmodifiedbyid
+,	Relationship_Name	llc_bi__account__c
+,	Borrower_Type	llc_bi__borrower_type__c
+,	Contingent_Type	llc_bi__contingent_type__c
+,	Contingent_Amount	llc_bi__contingent_amount__c
+,	Record_Type	recordtypeid
+,	Facility	llc_bi__loan__c
+,	Product_Package	llc_bi__product_package__c
+,	Entity_Auto_Number	name
+,	Currency	currencyisocode
+
+FROM  `dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_entity-involvement`
+where id in (select id from  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_legal_entities_curated)
+except distinct
+SELECT
+id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,llc_bi__account__c
+,llc_bi__borrower_type__c
+,llc_bi__contingent_type__c
+,llc_bi__contingent_amount__c
+,recordtypeid
+,llc_bi__loan__c
+,llc_bi__product_package__c
+,name
+,currencyisocode
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_legal_entities_curated
+
+
+)
+      
+    ) dbt_internal_test
+[0m12:17:04.757903 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dmn01-rsksoi-bld-01-2017&j=bq:europe-west2:c8fa19bd-bc40-4909-b04a-8895bec36b0e&page=queryresults
+[0m12:17:04.759409 [debug] [Thread-1 (]: Timing info for test.csp.cur_entity-involvement (execute): 2023-08-14 12:17:03.626690 => 2023-08-14 12:17:04.759300
+[0m12:17:04.760593 [info ] [Thread-1 (]: 3 of 4 PASS cur_entity-involvement ............................................. [[32mPASS[0m in 1.14s]
+[0m12:17:04.761388 [debug] [Thread-1 (]: Finished running node test.csp.cur_entity-involvement
+[0m12:17:04.761791 [debug] [Thread-1 (]: Began running node test.csp.cur_product
+[0m12:17:04.762189 [info ] [Thread-1 (]: 4 of 4 START test cur_product .................................................. [RUN]
+[0m12:17:04.763148 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.csp.cur_product'
+[0m12:17:04.763422 [debug] [Thread-1 (]: Began compiling node test.csp.cur_product
+[0m12:17:04.766344 [debug] [Thread-1 (]: Writing injected SQL for node "test.csp.cur_product"
+[0m12:17:04.767240 [debug] [Thread-1 (]: Timing info for test.csp.cur_product (compile): 2023-08-14 12:17:04.763603 => 2023-08-14 12:17:04.767178
+[0m12:17:04.767466 [debug] [Thread-1 (]: Began executing node test.csp.cur_product
+[0m12:17:04.775398 [debug] [Thread-1 (]: Writing runtime sql for node "test.csp.cur_product"
+[0m12:17:04.776390 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:17:04.776645 [debug] [Thread-1 (]: On test.csp.cur_product: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "curated", "target_name": "dev", "node_id": "test.csp.cur_product"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      select 1 from (
+SELECT
+ccs_accountnumber__c
+,currencyisocode
+,llc_bi__product_package__c
+,llc_bi__amount__c
+,name
+,llc_bi__lookupkey__c
+,ccs_duration__c
+,llc_bi__status__c
+,ccs_heritage__c
+,ownerid
+,ccs_partially_amortising_loan_type__c
+,ccs_previously_sanctioned_amount__c
+,llc_bi__product__c
+,llc_bi__product_line__c
+,llc_bi__product_type__c
+,ccs_sector__c
+,ccs_security__c
+,ccs_sortcode__c
+,llc_bi__stage__c
+,llc_bi__product_reference__c
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_odtype__c
+,ccs_purpose__c
+,ccs_amountperencashment__c
+,ccs_cardscheme__c
+,ccs_formfactor__c
+,ccs_frequency__c
+,ccs_dateoftravellinkagreement__c
+,ccs_maxvaluethroughonlinebulkpayments__c
+,ccs_rightofwithdrawalconfirmed__c
+,cast(ccs_valueofdailyorder__c as string) ccs_valueofdailyorder__c
+,ccs_which_limits_apply_to_the_facility__c
+,ccs_max_period_for_each_fx_contract__c
+,ccs_apply_crh__c
+,ccs_apply_tranche_drawdown__c
+,ccs_loan_repayment_profile__c
+,ccs_minimum_amount_per_drawdown__c
+,ccs_number_of_months_in_crh__c
+,ccs_number_of_quarters_in_crh__c
+,ccs_repayment_frequency__c
+,ccs_eligible_for_crh__c
+,ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated
+except distinct
+SELECT
+	AccountNumber	ccs_accountnumber__c
+,	CurrencyISOCode	currencyisocode
+,	Application	llc_bi__product_package__c
+,	FacilityAmount	llc_bi__amount__c
+,	FacilityName	name
+,	FacilityNumber	llc_bi__lookupkey__c
+,	Duration	ccs_duration__c
+,	Status	llc_bi__status__c
+,	Heritage	ccs_heritage__c
+,	Owner	ownerid
+,	PartiallyAmortisingLoanType	ccs_partially_amortising_loan_type__c
+,	PreviouslySanctionedAmount	ccs_previously_sanctioned_amount__c
+,	Product	llc_bi__product__c
+,	ProductLine	llc_bi__product_line__c
+,	ProductType	llc_bi__product_type__c
+,	Sector	ccs_sector__c
+,	Security	ccs_security__c
+,	SortCode	ccs_sortcode__c
+,	Stage	llc_bi__stage__c
+,	ProductReference	llc_bi__product_reference__c
+,	Id	id
+,	CreatedDate	createddate
+,	CreatedBy	createdbyid
+,	LastModifiedDate	lastmodifieddate
+,	LastModifiedBy	lastmodifiedbyid
+,	ODType	ccs_odtype__c
+,	Purpose	ccs_purpose__c
+,	AmountPerEncashment	ccs_amountperencashment__c
+,	CardScheme	ccs_cardscheme__c
+,	FormFactor	ccs_formfactor__c
+,	Frequency	ccs_frequency__c
+,	DateOfTravelLinkAgreement	ccs_dateoftravellinkagreement__c
+,	MaxValueThroughOnlineBulkPayments	ccs_maxvaluethroughonlinebulkpayments__c
+,	RightOfWithdrawalConfirmed	ccs_rightofwithdrawalconfirmed__c
+,	ValueOfDailyOrder	ccs_valueofdailyorder__c
+,	WhichLimitsApplyToTheFacility	ccs_which_limits_apply_to_the_facility__c
+,	MaxPeriodForEachFXContract	ccs_max_period_for_each_fx_contract__c
+,	ApplyCRH	ccs_apply_crh__c
+,	ApplyTrancheDrawdown	ccs_apply_tranche_drawdown__c
+,	LoanRepaymentProfile	ccs_loan_repayment_profile__c
+,	MinimumAmountPerDrawdown	ccs_minimum_amount_per_drawdown__c
+,	NumberOfMonthsInCRH	ccs_number_of_months_in_crh__c
+,	NumberOfQuartersInCRH	ccs_number_of_quarters_in_crh__c
+,	RepaymentFrequency	ccs_repayment_frequency__c
+,	EligibleForCRH	ccs_eligible_for_crh__c
+,	EligibleForTrancheDrawdown	ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_product
+where id in (select id from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated))
+union all
+
+
+select 1 from (
+
+SELECT
+	AccountNumber	ccs_accountnumber__c
+,	CurrencyISOCode	currencyisocode
+,	Application	llc_bi__product_package__c
+,	FacilityAmount	llc_bi__amount__c
+,	FacilityName	name
+,	FacilityNumber	llc_bi__lookupkey__c
+,	Duration	ccs_duration__c
+,	Status	llc_bi__status__c
+,	Heritage	ccs_heritage__c
+,	Owner	ownerid
+,	PartiallyAmortisingLoanType	ccs_partially_amortising_loan_type__c
+,	PreviouslySanctionedAmount	ccs_previously_sanctioned_amount__c
+,	Product	llc_bi__product__c
+,	ProductLine	llc_bi__product_line__c
+,	ProductType	llc_bi__product_type__c
+,	Sector	ccs_sector__c
+,	Security	ccs_security__c
+,	SortCode	ccs_sortcode__c
+,	Stage	llc_bi__stage__c
+,	ProductReference	llc_bi__product_reference__c
+,	Id	id
+,	CreatedDate	createddate
+,	CreatedBy	createdbyid
+,	LastModifiedDate	lastmodifieddate
+,	LastModifiedBy	lastmodifiedbyid
+,	ODType	ccs_odtype__c
+,	Purpose	ccs_purpose__c
+,	AmountPerEncashment	ccs_amountperencashment__c
+,	CardScheme	ccs_cardscheme__c
+,	FormFactor	ccs_formfactor__c
+,	Frequency	ccs_frequency__c
+,	DateOfTravelLinkAgreement	ccs_dateoftravellinkagreement__c
+,	MaxValueThroughOnlineBulkPayments	ccs_maxvaluethroughonlinebulkpayments__c
+,	RightOfWithdrawalConfirmed	ccs_rightofwithdrawalconfirmed__c
+,	ValueOfDailyOrder	ccs_valueofdailyorder__c
+,	WhichLimitsApplyToTheFacility	ccs_which_limits_apply_to_the_facility__c
+,	MaxPeriodForEachFXContract	ccs_max_period_for_each_fx_contract__c
+,	ApplyCRH	ccs_apply_crh__c
+,	ApplyTrancheDrawdown	ccs_apply_tranche_drawdown__c
+,	LoanRepaymentProfile	ccs_loan_repayment_profile__c
+,	MinimumAmountPerDrawdown	ccs_minimum_amount_per_drawdown__c
+,	NumberOfMonthsInCRH	ccs_number_of_months_in_crh__c
+,	NumberOfQuartersInCRH	ccs_number_of_quarters_in_crh__c
+,	RepaymentFrequency	ccs_repayment_frequency__c
+,	EligibleForCRH	ccs_eligible_for_crh__c
+,	EligibleForTrancheDrawdown	ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_product
+where id in (select id from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated)
+except distinct
+SELECT
+ccs_accountnumber__c
+,currencyisocode
+,llc_bi__product_package__c
+,llc_bi__amount__c
+,name
+,llc_bi__lookupkey__c
+,ccs_duration__c
+,llc_bi__status__c
+,ccs_heritage__c
+,ownerid
+,ccs_partially_amortising_loan_type__c
+,ccs_previously_sanctioned_amount__c
+,llc_bi__product__c
+,llc_bi__product_line__c
+,llc_bi__product_type__c
+,ccs_sector__c
+,ccs_security__c
+,ccs_sortcode__c
+,llc_bi__stage__c
+,llc_bi__product_reference__c
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_odtype__c
+,ccs_purpose__c
+,ccs_amountperencashment__c
+,ccs_cardscheme__c
+,ccs_formfactor__c
+,ccs_frequency__c
+,ccs_dateoftravellinkagreement__c
+,ccs_maxvaluethroughonlinebulkpayments__c
+,ccs_rightofwithdrawalconfirmed__c
+,cast(ccs_valueofdailyorder__c as string) ccs_valueofdailyorder__c
+,ccs_which_limits_apply_to_the_facility__c
+,ccs_max_period_for_each_fx_contract__c
+,ccs_apply_crh__c
+,ccs_apply_tranche_drawdown__c
+,ccs_loan_repayment_profile__c
+,ccs_minimum_amount_per_drawdown__c
+,ccs_number_of_months_in_crh__c
+,ccs_number_of_quarters_in_crh__c
+,ccs_repayment_frequency__c
+,ccs_eligible_for_crh__c
+,ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated)
+      
+    ) dbt_internal_test
+[0m12:17:05.779725 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dmn01-rsksoi-bld-01-2017&j=bq:europe-west2:d7051155-4e2b-4fac-8194-6d2f5bf7ec22&page=queryresults
+[0m12:17:05.780548 [debug] [Thread-1 (]: Timing info for test.csp.cur_product (execute): 2023-08-14 12:17:04.767620 => 2023-08-14 12:17:05.780469
+[0m12:17:05.781348 [error] [Thread-1 (]: 4 of 4 FAIL 20 cur_product ..................................................... [[31mFAIL 20[0m in 1.02s]
+[0m12:17:05.781743 [debug] [Thread-1 (]: Finished running node test.csp.cur_product
+[0m12:17:05.783425 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:17:05.784261 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:17:05.784411 [debug] [MainThread]: Connection 'test.csp.cur_product' was properly closed.
+[0m12:17:05.784621 [info ] [MainThread]: 
+[0m12:17:05.784873 [info ] [MainThread]: Finished running 4 tests in 0 hours 0 minutes and 5.00 seconds (5.00s).
+[0m12:17:05.785312 [debug] [MainThread]: Command end result
+[0m12:17:05.866984 [info ] [MainThread]: 
+[0m12:17:05.867202 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m12:17:05.867307 [info ] [MainThread]: 
+[0m12:17:05.867471 [error] [MainThread]: [31mFailure in test cur_product (tests/UpstreamToDownstream/DV/cur_product.sql)[0m
+[0m12:17:05.867591 [error] [MainThread]:   Got 20 results, configured to fail if != 0
+[0m12:17:05.867687 [info ] [MainThread]: 
+[0m12:17:05.867785 [info ] [MainThread]:   compiled Code at target/compiled/csp/tests/UpstreamToDownstream/DV/cur_product.sql
+[0m12:17:05.867887 [info ] [MainThread]: 
+[0m12:17:05.867979 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m12:17:05.868132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b93a8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b93a910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13b93a850>]}
+[0m12:17:05.868247 [debug] [MainThread]: Flushing usage events
