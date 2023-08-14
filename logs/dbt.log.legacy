@@ -1,5 +1,0 @@
-2023-08-14 12:21:34.211932 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
-2023-08-14 12:21:38.313084 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.28', 58046), raddr=('142.250.187.234', 443)>
-2023-08-14 12:21:38.313579 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.28', 64097), raddr=('142.250.187.234', 443)>
-2023-08-14 12:21:38.313815 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.28', 54466), raddr=('142.250.187.234', 443)>
-2023-08-14 12:21:39.449178 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.28', 65019), raddr=('142.250.187.234', 443)>
