@@ -1417,3 +1417,8 @@
 2023-08-14 12:17:04.772190 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.28', 54514), raddr=('142.250.187.234', 443)>
 2023-08-14 12:17:04.772463 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.28', 51084), raddr=('142.250.187.234', 443)>
 2023-08-14 12:17:05.792451 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.28', 57586), raddr=('142.250.187.234', 443)>
+2023-08-14 12:19:10.322328 (MainThread): 'cgi' is deprecated and slated for removal in Python 3.13
+2023-08-14 12:19:14.664490 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=16, family=2, type=1, proto=0, laddr=('192.168.0.28', 60374), raddr=('142.250.187.234', 443)>
+2023-08-14 12:19:14.664840 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=17, family=2, type=1, proto=0, laddr=('192.168.0.28', 51114), raddr=('142.250.187.234', 443)>
+2023-08-14 12:19:14.665012 (Thread-1 (worker)): unclosed <ssl.SSLSocket fd=18, family=2, type=1, proto=0, laddr=('192.168.0.28', 65483), raddr=('142.250.187.234', 443)>
+2023-08-14 12:19:15.772343 (MainThread): unclosed <ssl.SSLSocket fd=15, family=2, type=1, proto=0, laddr=('192.168.0.28', 61308), raddr=('142.250.187.234', 443)>
