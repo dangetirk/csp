@@ -1,0 +1,190 @@
+select 1 from (
+SELECT
+ccs_country_of_incorporation__c
+,llc_bi__lookupkey__c
+,name
+,type
+,ccs_segment__c
+,ccs_sic_description__c
+,shippingstreet
+,shippingcity
+,shippingstate
+,shippingcountry
+,shippingpostalcode
+,accountnumber
+,ccs_bank_entity__c
+,ccs_bsu_rm_name__c
+,ccs_company_registration_number__c
+,ccs_credit_officer__c
+,ccs_date_commenced_trading__c
+,ccs_date_of_association__c
+,ccs_oucode__c
+,ccs_relationshiptradingname__c
+,ccs_rfi_flag__c
+,ownerid
+,ccs_sort_code__c
+,ccs_support_indicator__c
+,ccs_cmdid__c
+,recordtypeid
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_collections_indicator__c
+,ccs_country_of_registration__c
+,ccs_dateofbirth__c
+,ccs_defaultflag__c
+,ccs_is_part_of_org__c
+,ccs_kyb_status__c
+,ccs_registered_charity_number__c
+,llc_bi__status__c
+,ccs_monthly_loan_repayment_limit__c
+,ccs_available_overdraft__c
+,ccs_reason_codes__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated
+
+except distinct
+
+SELECT
+CountryOfIncorporation	ccs_country_of_incorporation__c
+,OCISPartyID	llc_bi__lookupkey__c
+,RelationshipName	name
+,RelationshipType	type
+,Segment	ccs_segment__c
+,SICCodeDescription	ccs_sic_description__c
+,ShippingStreet	shippingstreet
+,ShippingCity	shippingcity
+,ShippingState	shippingstate
+,ShippingCountry	shippingcountry
+,ShippingPostalCode	shippingpostalcode
+,AccountNumber	accountnumber
+,BankEntity	ccs_bank_entity__c
+,BSURMName	ccs_bsu_rm_name__c
+,CompanyRegistrationNumber	ccs_company_registration_number__c
+,CreditOfficer	ccs_credit_officer__c
+,DateCommencedTrading	ccs_date_commenced_trading__c
+,DateOfAssociation	ccs_date_of_association__c
+,OUCode	ccs_oucode__c
+,RelationshipTradingName	ccs_relationshiptradingname__c
+,RFIFlag	ccs_rfi_flag__c
+,RMName	ownerid
+,SortCode	ccs_sort_code__c
+,SupportIndicator	ccs_support_indicator__c
+,CMDID	ccs_cmdid__c
+,RelationshipRecordType	recordtypeid
+,Id	id
+,CreatedDate	createddate
+,CreatedBy	createdbyid
+,LastModifiedDate	lastmodifieddate
+,LastModifiedBy	lastmodifiedbyid
+,CollectionsIndicator	ccs_collections_indicator__c
+,CountryofRegistration	ccs_country_of_registration__c
+,DateOfBirth	ccs_dateofbirth__c
+,DefaultFlag	ccs_defaultflag__c
+,isPartOfOrg	ccs_is_part_of_org__c
+,KYBStatus	ccs_kyb_status__c
+,RegisteredCharityNumber	ccs_registered_charity_number__c
+,Status	llc_bi__status__c
+,MonthlyLoanRepaymentLimit	ccs_monthly_loan_repayment_limit__c
+,AvailableOverdraft	ccs_available_overdraft__c
+,ReasonCodes	ccs_reason_codes__c
+FROM  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_customer
+where RelationshipName in ( select name from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated))
+
+UNION ALL
+
+SELECT 1 FROM (
+
+SELECT
+CountryOfIncorporation	ccs_country_of_incorporation__c
+,OCISPartyID	llc_bi__lookupkey__c
+,RelationshipName	name
+,RelationshipType	type
+,Segment	ccs_segment__c
+,SICCodeDescription	ccs_sic_description__c
+,ShippingStreet	shippingstreet
+,ShippingCity	shippingcity
+,ShippingState	shippingstate
+,ShippingCountry	shippingcountry
+,ShippingPostalCode	shippingpostalcode
+,AccountNumber	accountnumber
+,BankEntity	ccs_bank_entity__c
+,BSURMName	ccs_bsu_rm_name__c
+,CompanyRegistrationNumber	ccs_company_registration_number__c
+,CreditOfficer	ccs_credit_officer__c
+,DateCommencedTrading	ccs_date_commenced_trading__c
+,DateOfAssociation	ccs_date_of_association__c
+,OUCode	ccs_oucode__c
+,RelationshipTradingName	ccs_relationshiptradingname__c
+,RFIFlag	ccs_rfi_flag__c
+,RMName	ownerid
+,SortCode	ccs_sort_code__c
+,SupportIndicator	ccs_support_indicator__c
+,CMDID	ccs_cmdid__c
+,RelationshipRecordType	recordtypeid
+,Id	id
+,CreatedDate	createddate
+,CreatedBy	createdbyid
+,LastModifiedDate	lastmodifieddate
+,LastModifiedBy	lastmodifiedbyid
+,CollectionsIndicator	ccs_collections_indicator__c
+,CountryofRegistration	ccs_country_of_registration__c
+,DateOfBirth	ccs_dateofbirth__c
+,DefaultFlag	ccs_defaultflag__c
+,isPartOfOrg	ccs_is_part_of_org__c
+,KYBStatus	ccs_kyb_status__c
+,RegisteredCharityNumber	ccs_registered_charity_number__c
+,Status	llc_bi__status__c
+,MonthlyLoanRepaymentLimit	ccs_monthly_loan_repayment_limit__c
+,AvailableOverdraft	ccs_available_overdraft__c
+,ReasonCodes	ccs_reason_codes__c
+FROM  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_customer
+where RelationshipName in ( select name from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated)
+
+except distinct
+
+SELECT
+ccs_country_of_incorporation__c
+,llc_bi__lookupkey__c
+,name
+,type
+,ccs_segment__c
+,ccs_sic_description__c
+,shippingstreet
+,shippingcity
+,shippingstate
+,shippingcountry
+,shippingpostalcode
+,accountnumber
+,ccs_bank_entity__c
+,ccs_bsu_rm_name__c
+,ccs_company_registration_number__c
+,ccs_credit_officer__c
+,ccs_date_commenced_trading__c
+,ccs_date_of_association__c
+,ccs_oucode__c
+,ccs_relationshiptradingname__c
+,ccs_rfi_flag__c
+,ownerid
+,ccs_sort_code__c
+,ccs_support_indicator__c
+,ccs_cmdid__c
+,recordtypeid
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_collections_indicator__c
+,ccs_country_of_registration__c
+,ccs_dateofbirth__c
+,ccs_defaultflag__c
+,ccs_is_part_of_org__c
+,ccs_kyb_status__c
+,ccs_registered_charity_number__c
+,llc_bi__status__c
+,ccs_monthly_loan_repayment_limit__c
+,ccs_available_overdraft__c
+,ccs_reason_codes__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_curated)

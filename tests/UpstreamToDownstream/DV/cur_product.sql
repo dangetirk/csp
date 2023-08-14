@@ -1,0 +1,213 @@
+
+select 1 from (
+SELECT
+ccs_accountnumber__c
+,currencyisocode
+,llc_bi__product_package__c
+,llc_bi__amount__c
+,name
+,llc_bi__lookupkey__c
+,ccs_duration__c
+,llc_bi__status__c
+,ccs_heritage__c
+,ownerid
+,ccs_partially_amortising_loan_type__c
+,ccs_previously_sanctioned_amount__c
+,llc_bi__product__c
+,llc_bi__product_line__c
+,llc_bi__product_type__c
+,ccs_sector__c
+,ccs_security__c
+,ccs_sortcode__c
+,llc_bi__stage__c
+,llc_bi__product_reference__c
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_odtype__c
+,ccs_purpose__c
+,ccs_amountperencashment__c
+,ccs_cardscheme__c
+,ccs_formfactor__c
+,ccs_frequency__c
+,ccs_dateoftravellinkagreement__c
+,ccs_maxvaluethroughonlinebulkpayments__c
+,ccs_rightofwithdrawalconfirmed__c
+,cast(ccs_valueofdailyorder__c as string) ccs_valueofdailyorder__c
+,ccs_which_limits_apply_to_the_facility__c
+,ccs_max_period_for_each_fx_contract__c
+,ccs_apply_crh__c
+,ccs_apply_tranche_drawdown__c
+,ccs_loan_repayment_profile__c
+,ccs_minimum_amount_per_drawdown__c
+,ccs_number_of_months_in_crh__c
+,ccs_number_of_quarters_in_crh__c
+,ccs_repayment_frequency__c
+,ccs_eligible_for_crh__c
+,ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated
+except distinct
+SELECT
+	AccountNumber	ccs_accountnumber__c
+,	CurrencyISOCode	currencyisocode
+,	Application	llc_bi__product_package__c
+,	FacilityAmount	llc_bi__amount__c
+,	FacilityName	name
+,	FacilityNumber	llc_bi__lookupkey__c
+,	Duration	ccs_duration__c
+,	Status	llc_bi__status__c
+,	Heritage	ccs_heritage__c
+,	Owner	ownerid
+,	PartiallyAmortisingLoanType	ccs_partially_amortising_loan_type__c
+,	PreviouslySanctionedAmount	ccs_previously_sanctioned_amount__c
+,	Product	llc_bi__product__c
+,	ProductLine	llc_bi__product_line__c
+,	ProductType	llc_bi__product_type__c
+,	Sector	ccs_sector__c
+,	Security	ccs_security__c
+,	SortCode	ccs_sortcode__c
+,	Stage	llc_bi__stage__c
+,	ProductReference	llc_bi__product_reference__c
+,	Id	id
+,	CreatedDate	createddate
+,	CreatedBy	createdbyid
+,	LastModifiedDate	lastmodifieddate
+,	LastModifiedBy	lastmodifiedbyid
+,	ODType	ccs_odtype__c
+,	Purpose	ccs_purpose__c
+,	AmountPerEncashment	ccs_amountperencashment__c
+,	CardScheme	ccs_cardscheme__c
+,	FormFactor	ccs_formfactor__c
+,	Frequency	ccs_frequency__c
+,	DateOfTravelLinkAgreement	ccs_dateoftravellinkagreement__c
+,	MaxValueThroughOnlineBulkPayments	ccs_maxvaluethroughonlinebulkpayments__c
+,	RightOfWithdrawalConfirmed	ccs_rightofwithdrawalconfirmed__c
+,	ValueOfDailyOrder	ccs_valueofdailyorder__c
+,	WhichLimitsApplyToTheFacility	ccs_which_limits_apply_to_the_facility__c
+,	MaxPeriodForEachFXContract	ccs_max_period_for_each_fx_contract__c
+,	ApplyCRH	ccs_apply_crh__c
+,	ApplyTrancheDrawdown	ccs_apply_tranche_drawdown__c
+,	LoanRepaymentProfile	ccs_loan_repayment_profile__c
+,	MinimumAmountPerDrawdown	ccs_minimum_amount_per_drawdown__c
+,	NumberOfMonthsInCRH	ccs_number_of_months_in_crh__c
+,	NumberOfQuartersInCRH	ccs_number_of_quarters_in_crh__c
+,	RepaymentFrequency	ccs_repayment_frequency__c
+,	EligibleForCRH	ccs_eligible_for_crh__c
+,	EligibleForTrancheDrawdown	ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_product
+where id in (select id from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated))
+union all
+
+
+select 1 from (
+
+SELECT
+	AccountNumber	ccs_accountnumber__c
+,	CurrencyISOCode	currencyisocode
+,	Application	llc_bi__product_package__c
+,	FacilityAmount	llc_bi__amount__c
+,	FacilityName	name
+,	FacilityNumber	llc_bi__lookupkey__c
+,	Duration	ccs_duration__c
+,	Status	llc_bi__status__c
+,	Heritage	ccs_heritage__c
+,	Owner	ownerid
+,	PartiallyAmortisingLoanType	ccs_partially_amortising_loan_type__c
+,	PreviouslySanctionedAmount	ccs_previously_sanctioned_amount__c
+,	Product	llc_bi__product__c
+,	ProductLine	llc_bi__product_line__c
+,	ProductType	llc_bi__product_type__c
+,	Sector	ccs_sector__c
+,	Security	ccs_security__c
+,	SortCode	ccs_sortcode__c
+,	Stage	llc_bi__stage__c
+,	ProductReference	llc_bi__product_reference__c
+,	Id	id
+,	CreatedDate	createddate
+,	CreatedBy	createdbyid
+,	LastModifiedDate	lastmodifieddate
+,	LastModifiedBy	lastmodifiedbyid
+,	ODType	ccs_odtype__c
+,	Purpose	ccs_purpose__c
+,	AmountPerEncashment	ccs_amountperencashment__c
+,	CardScheme	ccs_cardscheme__c
+,	FormFactor	ccs_formfactor__c
+,	Frequency	ccs_frequency__c
+,	DateOfTravelLinkAgreement	ccs_dateoftravellinkagreement__c
+,	MaxValueThroughOnlineBulkPayments	ccs_maxvaluethroughonlinebulkpayments__c
+,	RightOfWithdrawalConfirmed	ccs_rightofwithdrawalconfirmed__c
+,	ValueOfDailyOrder	ccs_valueofdailyorder__c
+,	WhichLimitsApplyToTheFacility	ccs_which_limits_apply_to_the_facility__c
+,	MaxPeriodForEachFXContract	ccs_max_period_for_each_fx_contract__c
+,	ApplyCRH	ccs_apply_crh__c
+,	ApplyTrancheDrawdown	ccs_apply_tranche_drawdown__c
+,	LoanRepaymentProfile	ccs_loan_repayment_profile__c
+,	MinimumAmountPerDrawdown	ccs_minimum_amount_per_drawdown__c
+,	NumberOfMonthsInCRH	ccs_number_of_months_in_crh__c
+,	NumberOfQuartersInCRH	ccs_number_of_quarters_in_crh__c
+,	RepaymentFrequency	ccs_repayment_frequency__c
+,	EligibleForCRH	ccs_eligible_for_crh__c
+,	EligibleForTrancheDrawdown	ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_product
+where id in (select id from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated)
+except distinct
+SELECT
+ccs_accountnumber__c
+,currencyisocode
+,llc_bi__product_package__c
+,llc_bi__amount__c
+,name
+,llc_bi__lookupkey__c
+,ccs_duration__c
+,llc_bi__status__c
+,ccs_heritage__c
+,ownerid
+,ccs_partially_amortising_loan_type__c
+,ccs_previously_sanctioned_amount__c
+,llc_bi__product__c
+,llc_bi__product_line__c
+,llc_bi__product_type__c
+,ccs_sector__c
+,ccs_security__c
+,ccs_sortcode__c
+,llc_bi__stage__c
+,llc_bi__product_reference__c
+,id
+,createddate
+,createdbyid
+,lastmodifieddate
+,lastmodifiedbyid
+,ccs_odtype__c
+,ccs_purpose__c
+,ccs_amountperencashment__c
+,ccs_cardscheme__c
+,ccs_formfactor__c
+,ccs_frequency__c
+,ccs_dateoftravellinkagreement__c
+,ccs_maxvaluethroughonlinebulkpayments__c
+,ccs_rightofwithdrawalconfirmed__c
+,cast(ccs_valueofdailyorder__c as string) ccs_valueofdailyorder__c
+,ccs_which_limits_apply_to_the_facility__c
+,ccs_max_period_for_each_fx_contract__c
+,ccs_apply_crh__c
+,ccs_apply_tranche_drawdown__c
+,ccs_loan_repayment_profile__c
+,ccs_minimum_amount_per_drawdown__c
+,ccs_number_of_months_in_crh__c
+,ccs_number_of_quarters_in_crh__c
+,ccs_repayment_frequency__c
+,ccs_eligible_for_crh__c
+,ccs_tranchedrawdown__c
+
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_curated)
+
+
+
+
+
+

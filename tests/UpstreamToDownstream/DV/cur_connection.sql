@@ -1,0 +1,54 @@
+select 1 from (SELECT
+ llc_bi__connected_from__c
+,llc_bi__connected_to__c
+,llc_bi__certifying_individual__c
+,LLC_BI__Connection_Role__c
+,ccs_is_key_account_party__c
+,ccs_is_signatory__c
+,ccs_is_org_lead__c
+,llc_bi__uid__c
+,ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated
+except distinct
+
+
+SELECT
+ Relationship	llc_bi__connected_from__c
+,RelationshipName	llc_bi__connected_to__c
+,CertifyingIndividual	llc_bi__certifying_individual__c
+,Role	LLC_BI__Connection_Role__c
+,KeyAccountParty	ccs_is_key_account_party__c
+,Signatory	ccs_is_signatory__c
+,IsORGLead	ccs_is_org_lead__c
+,UID	llc_bi__uid__c
+,ORGLead	ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_Connection 
+where Relationship in (select llc_bi__connected_from__c from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated))
+
+union all
+select 1 from (
+
+SELECT
+ Relationship	llc_bi__connected_from__c
+,RelationshipName	llc_bi__connected_to__c
+,CertifyingIndividual	llc_bi__certifying_individual__c
+,Role	LLC_BI__Connection_Role__c
+,KeyAccountParty	ccs_is_key_account_party__c
+,Signatory	ccs_is_signatory__c
+,IsORGLead	ccs_is_org_lead__c
+,UID	llc_bi__uid__c
+,ORGLead	ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_curated.cur_Connection 
+where Relationship in (select llc_bi__connected_from__c from dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated)
+except distinct 
+SELECT
+ llc_bi__connected_from__c
+,llc_bi__connected_to__c
+,llc_bi__certifying_individual__c
+,LLC_BI__Connection_Role__c
+,ccs_is_key_account_party__c
+,ccs_is_signatory__c
+,ccs_is_org_lead__c
+,llc_bi__uid__c
+,ccs_org_lead__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated)
