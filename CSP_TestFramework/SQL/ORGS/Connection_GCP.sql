@@ -1,0 +1,42 @@
+select
+Id
+,Name
+,CurrencyIsoCode
+,CONCAT(REPLACE(CAST(CreatedDate AS STRING ),' ','T'),'.000+0000') AS CreatedDate
+,CreatedById
+,CONCAT(REPLACE(CAST(LastModifiedDate AS STRING ),' ','T'),'.000+0000') AS LastModifiedDate
+,LastModifiedById
+,LLC_BI__Connected_From__c
+,LLC_BI__Connected_To__c
+,LLC_BI__Description__c
+,LLC_BI__Status__c
+,LLC_BI__Type__c
+,LLC_BI__Connection_Role__c
+,LLC_BI__UID__c
+,LLC_BI__Ownership_Percent__c
+,LLC_BI__Certifying_Individual__c
+,LLC_BI__Controlling_Individual__c
+,LLC_BI__Indirect_Ownership_Percent__c
+,LLC_BI__Official_Title__c
+,LLC_BI__Total_Direct_Indirect_Ownership_Percent__c
+,LLC_BI__Is_Active__c
+,CCS_Relationship_Name__c
+,CCS_Total_Current_Bank_Limits__c
+,CCS_Risk_Rating__c
+,CCS_RFI_Flag__c
+,CCS_Support_Indicator__c
+,CCS_Current_Hard_Bank_Limits__c
+,CCS_Current_Soft_Bank_Limits__c
+,CCS_is_Key_Account_Party__c
+,CCS_is_Signatory__c
+,CCS_KYC_Status__c
+,CCS_Record_Type__c
+,CCS_Roles__c
+,CCS_Support_Needed__c
+,CCS_Is_ORG_Lead__c
+,CCS_ORG_Lead__c
+,CCS_RelationshipToFormula__c
+,CCS_Is_part_of_ORG__c
+,CCS_ORG_Lead_Name__c
+,CCS_Relationship_in_an_OGSA__c
+From  dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_connection_curated
