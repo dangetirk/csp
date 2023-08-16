@@ -1,3 +1,4 @@
 Test Name,Bigquery SQL,salesforce SQL,bigquery index,salesforce index,execute,SQL subfolder, comments
 TC_ACCOUNT,Account_GCP.sql,Account_NCINO.sql,"[0]","[0]",1,ORGS
 TC_Connetion,Connection_GCP.sql,Connection_NCINO.sql,"[0]","[0]",1,ORGS
+TC_Org_Approval,Org_Approval_GCP.sql,Org_Approval_NCINO.sql,"[0]","[0]",1,ORGS
