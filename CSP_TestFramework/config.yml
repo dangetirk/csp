@@ -3,8 +3,8 @@ logging: true
 salesforce:
   username: ratna-kumar.dangeti@lloydsbanking.com.devpoc
   password: Sony@4076
-  consumer_key: 3MVG9od6vNol.eBijuSl01nDrsQ7wHeq7GBHlowFNlxpnaOF5Y8yMB5zyzsM9C6VfRvs5TAYwIJPl4jecrHUs
-  consumer_secret: A8F3E6754BA366637DEC383CBDFAF30677BE6E634D6335BFDD002CD8749CC34A
+  consumer_key: 3MVG9od6vNol.eBijuSl01nDrsc_Ngz.DmtOGEn0Ja4DdL75sh_rzjhKqKo0C1DVygt2QyQ1xeGkrwtkfRE1L
+  consumer_secret: FB008DFDC0E87E35543FBD64DB3F5EA2B7AD7789E423138986F0B4F4203C8B03
   domain: test
 
 csv:

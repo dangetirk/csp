@@ -26,7 +26,7 @@ from datetime import datetime
 from test_case_execution import run_test_cases
 
 # Load the configuration file
-with open("config.yml", 'r') as ymlfile:
+with open("configdevpoc1.yml", 'r') as ymlfile:
     cfg = yaml.safe_load(ymlfile)
 
 # Access the configurations
