@@ -1,0 +1,19 @@
+select 
+Id
+,OwnerId
+,Name
+,CurrencyIsoCode
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__lookupKey__c
+,LLC_BI__Current_Total_Lendable_Value__c
+,LLC_BI__Total_Collateral_Pledged__c
+,LLC_BI__Total_Collateral_Value__c
+,LLC_BI__Total_Current_Lien_Amount__c
+,LLC_BI__Total_Superior_Lien_Amount__c
+,LLC_BI__Collateral_Pledged_Count__c
+
+FROM  LLC_BI__Loan_Collateral_Aggregate__c
+where CreatedDate >=2023-08-24T10:04:00.000Z

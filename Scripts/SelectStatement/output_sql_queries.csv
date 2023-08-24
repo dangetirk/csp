@@ -1,0 +1,162 @@
+SQL Query
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_deed_of_priority_curated
+select
+Id
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,CCS_Security__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_deed_of_priority_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_multi_charge_form_asset_curated
+select
+Id
+,OwnerId
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,CCS_Primary_Security__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_multi_charge_form_asset_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_security_case_curated
+select
+Id
+,OwnerId
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,CCS_ProfileSetupForStartQuestionnaire__c
+,CCS_QuestionnairePart2Profile__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_security_case_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_collateral_curated
+select
+Id
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__Account__c
+,LLC_BI__Collateral__c
+,LLC_BI__Pledging_Authority__c
+,LLC_BI__Primary_Owner__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_collateral_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_type_curated
+select
+Id
+,OwnerId
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__Active__c
+,LLC_BI__Condo_PUD__c
+,LLC_BI__Manufactured_Home__c
+,LLC_BI__Is_Complex__c
+,LLC_BI__Auto_Update_Collateral_Value__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_type_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_valuation_curated
+select
+Id
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__Collateral__c
+,LLC_BI__Active__c
+,LLC_BI__Primary__c
+,LLC_BI__Original_Value__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_valuation_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_curated
+select
+Id
+,OwnerId
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__Agricultural_Use__c
+,LLC_BI__Book_Entry__c
+,LLC_BI__Collateral_Type__c
+,LLC_BI__Commercial_Use__c
+,LLC_BI__Dwelling__c
+,LLC_BI__Leasehold__c
+,LLC_BI__Owner_Occupied__c
+,LLC_BI__Principal_Dwelling__c
+,LLC_BI__Purchase_Money__c
+,LLC_BI__Refinance__c
+,LLC_BI__Residential_Property__c
+,LLC_BI__UCC_Financing_Statement__c
+,cm_Abundance_of_Caution__c
+,cm_In_Flood_Zone__c
+,cm_Insurance_Reviewed__c
+,CCS_Set_up_Add_Remove_OGSA_Profiles__c
+,CCS_IsFirstChargeDuplicate__c
+,CCS_IsThirdChargeDuplicate__c
+,CCS_SecondChargeDuplicate__c
+,CCS_Ready_for_Dentons_Instruction__c
+,CCS_Facility_SAA__c
+,CCS_Security_Order__c
+,CCS_Collateral_Valuation_Estimated__c
+,CCS_Confirm_Commercial_Consideration_Ben__c
+,CCS_Security_is_not_MCOB_Regulated__c
+,CCS_Flag_to_disable_action_on_security__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_lien_curated
+select
+Id
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__Collateral__c
+,LLC_BI__Active__c
+,LLC_BI__Is_Excluded__c
+,LLC_BI__Is_Internal__c
+,LLC_BI__Is_Created_From_Collateral__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_lien_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_collateral2_curated
+select
+Id
+,Name
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+,LLC_BI__Collateral__c
+,LLC_BI__Loan_Collateral_Aggregate__c
+,LLC_BI__Active__c
+,LLC_BI__Authorize__c
+,LLC_BI__Is_Excluded__c
+,LLC_BI__Loan__c
+,LLC_BI__Is_Primary__c
+,LLC_BI__Is_Leased_Asset__c
+,LLC_BI__Is_Collateral_Count_Rollup_Eligible__c
+,LLC_BI__Is_Collateral_Value_Rollup_Eligible__c
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_collateral2_curated;
+"
+"--sql for dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_collateral_aggregate_curated
+select
+Id
+,OwnerId
+,CreatedDate
+,CreatedById
+,LastModifiedDate
+,LastModifiedById
+FROM dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_loan_collateral_aggregate_curated;
+"

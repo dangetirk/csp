@@ -1,0 +1,4411 @@
+#dbt test --profiles-dir ./profiles --profile curated --select source:Collateral_curated.rskcsp_ds_cardholder_curated
+version: 2
+sources:
+- name: Collateral_curated
+  database: dmn01-rsksoi-bld-01-2017
+  schema: dmn01_rsksoi_euwe2_rsk_csp_ds_curation
+  tables:
+  - name: rskcsp_ds_ccs_deed_of_priority_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: CCS_Security__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security__c
+          max_length: 18
+    - name: CCS_Deed_of_Priority_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Deed_of_Priority_Number__c
+    - name: CCS_Lender__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lender__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Lender__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Lender__c
+          max_length: 255
+  - name: rskcsp_ds_ccs_multi_charge_form_asset_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: OwnerId
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for OwnerId
+          column_type: String
+      - length_check:
+          name: Length Check for OwnerId
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: CCS_Primary_Security__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Primary_Security__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Primary_Security__c
+          max_length: 18
+    - name: CCS_Security__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security__c
+          max_length: 18
+  - name: rskcsp_ds_ccs_security_case_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: OwnerId
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for OwnerId
+          column_type: String
+      - length_check:
+          name: Length Check for OwnerId
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: RecordTypeId
+      tests:
+      - not_null:
+          name: Non-Null Check for RecordTypeId
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for RecordTypeId
+          column_type: String
+      - length_check:
+          name: Length Check for RecordTypeId
+          max_length: 18
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: CCS_Application__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Application__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Application__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Application__c
+          max_length: 18
+    - name: CCS_Questionnaire_Status__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Questionnaire_Status__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Questionnaire_Status__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Questionnaire_Status__c
+          max_length: 255
+    - name: CCS_Additional_Information__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Additional_Information__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Additional_Information__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Additional_Information__c
+          max_length: 255
+    - name: CCS_Amount_of_Upfront_Fee_Taken__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Amount_of_Upfront_Fee_Taken__c
+    - name: CCS_Amount_to_be_Recovered__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Amount_to_be_Recovered__c
+    - name: CCS_Bank__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Bank__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Bank__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Bank__c
+          max_length: 255
+    - name: CCS_Checklist_Stage__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Checklist_Stage__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Checklist_Stage__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Checklist_Stage__c
+          max_length: 255
+    - name: CCS_All_Other_Associated_Documents_Held__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_All_Other_Associated_Documents_Held__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_All_Other_Associated_Documents_Held__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_All_Other_Associated_Documents_Held__c
+          max_length: 255
+    - name: CCS_Chosen_Sep_Rep_Solicitor_City__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_City__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_City__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_City__c
+          max_length: 255
+    - name: CCS_Chosen_Sep_Rep_Solicitor_Contact__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_Contact__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_Contact__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_Contact__c
+          max_length: 80
+    - name: CCS_Chosen_Sep_Rep_Solicitor_Email__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_Email__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_Email__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_Email__c
+          max_length: 80
+    - name: CCS_Chosen_Sep_Rep_Solicitor_Firm_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_Firm_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_Firm_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_Firm_Name__c
+          max_length: 255
+    - name: CCS_Chosen_Sep_Rep_Solicitor_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_Name__c
+          max_length: 255
+    - name: CCS_Chosen_Sep_Rep_Solicitor_Phone__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_Phone__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_Phone__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_Phone__c
+          max_length: 40
+    - name: CCS_Chosen_Sep_Rep_Solicitor_Postcode__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor_Postcode__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor_Postcode__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor_Postcode__c
+          max_length: 255
+    - name: CCS_Chosen_Sep_Rep_Solicitor__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Sep_Rep_Solicitor__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Sep_Rep_Solicitor__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Sep_Rep_Solicitor__c
+          max_length: 255
+    - name: CCS_Chosen_Solicitor_Contact_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Chosen_Solicitor_Contact_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Chosen_Solicitor_Contact_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Chosen_Solicitor_Contact_Name__c
+          max_length: 255
+    - name: CCS_Company_Name_If_Applicable__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Company_Name_If_Applicable__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Company_Name_If_Applicable__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Company_Name_If_Applicable__c
+          max_length: 255
+    - name: CCS_Customer_Account_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Customer_Account_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Customer_Account_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Customer_Account_Number__c
+          max_length: 8
+    - name: CCS_Customer_Sort_Code__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Customer_Sort_Code__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Customer_Sort_Code__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Customer_Sort_Code__c
+          max_length: 6
+    - name: CCS_Email_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Email_Address__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Email_Address__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Email_Address__c
+          max_length: 80
+    - name: CCS_Forename__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Forename__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Forename__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Forename__c
+          max_length: 255
+    - name: CCS_Legal_Fee_to_be_Recovered__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Legal_Fee_to_be_Recovered__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Legal_Fee_to_be_Recovered__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Legal_Fee_to_be_Recovered__c
+          max_length: 255
+    - name: CCS_Lending_Execution_Case_Manager__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lending_Execution_Case_Manager__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Lending_Execution_Case_Manager__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Lending_Execution_Case_Manager__c
+          max_length: 18
+    - name: CCS_Location__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Location__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Location__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Location__c
+          max_length: 255
+    - name: CCS_Next_Action_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Next_Action_Date__c
+    - name: CCS_Next_Action__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Next_Action__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Next_Action__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Next_Action__c
+          max_length: 255
+    - name: CCS_Percentage_to_be_Recovered__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Percentage_to_be_Recovered__c
+    - name: CCS_Postcode__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Postcode__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Postcode__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Postcode__c
+          max_length: 255
+    - name: CCS_Quote_1__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Quote_1__c
+    - name: CCS_Quote_2__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Quote_2__c
+    - name: CCS_Quote_3__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Quote_3__c
+    - name: CCS_REL_Code__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_REL_Code__c
+    - name: CCS_RM_Cost_Code__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_RM_Cost_Code__c
+    - name: CCS_Relationship_s__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Relationship_s__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Relationship_s__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Relationship_s__c
+          max_length: 18
+    - name: CCS_Solicitor_1__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Solicitor_1__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Solicitor_1__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Solicitor_1__c
+          max_length: 255
+    - name: CCS_Solicitor_2__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Solicitor_2__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Solicitor_2__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Solicitor_2__c
+          max_length: 255
+    - name: CCS_Solicitor_3__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Solicitor_3__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Solicitor_3__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Solicitor_3__c
+          max_length: 255
+    - name: CCS_Submitter__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Submitter__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Submitter__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Submitter__c
+          max_length: 18
+    - name: CCS_Surname__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Surname__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Surname__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Surname__c
+          max_length: 255
+    - name: CCS_Telephone_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Telephone_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Telephone_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Telephone_Number__c
+          max_length: 40
+    - name: CCS_Title__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Title__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Title__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Title__c
+          max_length: 255
+    - name: CCS_Upfront_Legal_Fee_Taken__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Upfront_Legal_Fee_Taken__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Upfront_Legal_Fee_Taken__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Upfront_Legal_Fee_Taken__c
+          max_length: 255
+    - name: CCS_Record_Type_Developer_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Record_Type_Developer_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Record_Type_Developer_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Record_Type_Developer_Name__c
+          max_length: 1300
+    - name: CCS_Assets_used_for_share_acquisition__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Assets_used_for_share_acquisition__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Assets_used_for_share_acquisition__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Assets_used_for_share_acquisition__c
+          max_length: 255
+    - name: CCS_Do_connected_company_give_guarantee__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Do_connected_company_give_guarantee__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Do_connected_company_give_guarantee__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Do_connected_company_give_guarantee__c
+          max_length: 255
+    - name: CCS_Highly_leveraged_transaction__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Highly_leveraged_transaction__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Highly_leveraged_transaction__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Highly_leveraged_transaction__c
+          max_length: 255
+    - name: CCS_OpCo_PropCo_transactions_involved__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_OpCo_PropCo_transactions_involved__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_OpCo_PropCo_transactions_involved__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_OpCo_PropCo_transactions_involved__c
+          max_length: 255
+    - name: CCS_Property_Security_2m_non_Agriculture__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Property_Security_2m_non_Agriculture__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Property_Security_2m_non_Agriculture__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Property_Security_2m_non_Agriculture__c
+          max_length: 255
+    - name: CCS_Property_Security_500_000__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Property_Security_500_000__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Property_Security_500_000__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Property_Security_500_000__c
+          max_length: 255
+    - name: CCS_Property_Security_5m_Agriculture__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Property_Security_5m_Agriculture__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Property_Security_5m_Agriculture__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Property_Security_5m_Agriculture__c
+          max_length: 255
+    - name: CCS_acting_solicitor_a_sole_practitioner__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_acting_solicitor_a_sole_practitioner__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_acting_solicitor_a_sole_practitioner__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_acting_solicitor_a_sole_practitioner__c
+          max_length: 255
+    - name: CCS_Record_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Record_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Record_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Record_Type__c
+          max_length: 1300
+    - name: CCS_Applicable_Customer_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Applicable_Customer_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Applicable_Customer_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Applicable_Customer_Type__c
+          max_length: 255
+    - name: CCS_Applicable_Security_Types_1__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Applicable_Security_Types_1__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Applicable_Security_Types_1__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Applicable_Security_Types_1__c
+          max_length: 255
+    - name: CCS_Applicable_Security_Types_2__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Applicable_Security_Types_2__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Applicable_Security_Types_2__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Applicable_Security_Types_2__c
+          max_length: 255
+    - name: CCS_Are_1_more_Security_records_Property__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Are_1_more_Security_records_Property__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Are_1_more_Security_records_Property__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Are_1_more_Security_records_Property__c
+          max_length: 255
+    - name: CCS_Conflict_of_Interest__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Conflict_of_Interest__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Conflict_of_Interest__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Conflict_of_Interest__c
+          max_length: 255
+    - name: CCS_Does_the_transaction_involve_a_Trust__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Does_the_transaction_involve_a_Trust__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Does_the_transaction_involve_a_Trust__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Does_the_transaction_involve_a_Trust__c
+          max_length: 255
+    - name: CCS_PropertiesPurchased_viaSharePurchase__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_PropertiesPurchased_viaSharePurchase__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_PropertiesPurchased_viaSharePurchase__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_PropertiesPurchased_viaSharePurchase__c
+          max_length: 255
+    - name: CCS_Properties_currently_being_developed__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Properties_currently_being_developed__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Properties_currently_being_developed__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Properties_currently_being_developed__c
+          max_length: 255
+    - name: CCS_Properties_developed_post_completion__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Properties_developed_post_completion__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Properties_developed_post_completion__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Properties_developed_post_completion__c
+          max_length: 255
+    - name: CCS_Properties_recently_developed__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Properties_recently_developed__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Properties_recently_developed__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Properties_recently_developed__c
+          max_length: 255
+    - name: CCS_Properties_structurally_damaged__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Properties_structurally_damaged__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Properties_structurally_damaged__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Properties_structurally_damaged__c
+          max_length: 255
+    - name: CCS_Property_Statements_Confirmed__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Property_Statements_Confirmed__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Property_Statements_Confirmed__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Property_Statements_Confirmed__c
+          max_length: 255
+    - name: CCS_Part_2_Submitter__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Part_2_Submitter__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Part_2_Submitter__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Part_2_Submitter__c
+          max_length: 18
+    - name: CCS_Google_Address__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__Street__s
+          max_length: 255
+    - name: CCS_Google_Address__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__City__s
+          max_length: 40
+    - name: CCS_Google_Address__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__PostalCode__s
+          max_length: 20
+    - name: CCS_Google_Address__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__StateCode__s
+          max_length: 10
+    - name: CCS_Google_Address__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__CountryCode__s
+          max_length: 10
+    - name: CCS_Google_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__c
+    - name: CCS_Google_Solicitor_Address__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Solicitor_Address__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Solicitor_Address__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Solicitor_Address__Street__s
+          max_length: 255
+    - name: CCS_Google_Solicitor_Address__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Solicitor_Address__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Solicitor_Address__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Solicitor_Address__City__s
+          max_length: 40
+    - name: CCS_Google_Solicitor_Address__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Solicitor_Address__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Solicitor_Address__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Solicitor_Address__PostalCode__s
+          max_length: 20
+    - name: CCS_Google_Solicitor_Address__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Solicitor_Address__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Solicitor_Address__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Solicitor_Address__StateCode__s
+          max_length: 10
+    - name: CCS_Google_Solicitor_Address__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Solicitor_Address__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Solicitor_Address__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Solicitor_Address__CountryCode__s
+          max_length: 10
+    - name: CCS_Google_Solicitor_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Solicitor_Address__c
+    - name: CCS_CompaniesHouseRegistrationComplete__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_CompaniesHouseRegistrationComplete__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_CompaniesHouseRegistrationComplete__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_CompaniesHouseRegistrationComplete__c
+          max_length: 255
+    - name: CCS_Companies_House_Regd_Cert_Held__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Companies_House_Regd_Cert_Held__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Companies_House_Regd_Cert_Held__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Companies_House_Regd_Cert_Held__c
+          max_length: 255
+    - name: CCS_CompleteCompaniesHouseSearchforDeben__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_CompleteCompaniesHouseSearchforDeben__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_CompleteCompaniesHouseSearchforDeben__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_CompleteCompaniesHouseSearchforDeben__c
+          max_length: 255
+    - name: CCS_Complete_Companies_House_Search__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Complete_Companies_House_Search__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Complete_Companies_House_Search__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Complete_Companies_House_Search__c
+          max_length: 255
+    - name: CCS_Complete_Document_Redaction__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Complete_Document_Redaction__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Complete_Document_Redaction__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Complete_Document_Redaction__c
+          max_length: 255
+    - name: CCS_Complete_Law_Society_Search__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Complete_Law_Society_Search__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Complete_Law_Society_Search__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Complete_Law_Society_Search__c
+          max_length: 255
+    - name: CCS_Complete_Panel_Search__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Complete_Panel_Search__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Complete_Panel_Search__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Complete_Panel_Search__c
+          max_length: 255
+    - name: CCS_DocumentsStatusUpdateNextAction__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_DocumentsStatusUpdateNextAction__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_DocumentsStatusUpdateNextAction__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_DocumentsStatusUpdateNextAction__c
+          max_length: 255
+    - name: CCS_Indemnity_Policies_Required__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Indemnity_Policies_Required__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Indemnity_Policies_Required__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Indemnity_Policies_Required__c
+          max_length: 255
+    - name: CCS_Is_all_Security_Available__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_all_Security_Available__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_all_Security_Available__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_all_Security_Available__c
+          max_length: 255
+    - name: CCS_Packet_Sent_To_Iron_Mountain__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Packet_Sent_To_Iron_Mountain__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Packet_Sent_To_Iron_Mountain__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Packet_Sent_To_Iron_Mountain__c
+          max_length: 255
+    - name: CCS_Registered_Land_Registry_Correct__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Registered_Land_Registry_Correct__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Registered_Land_Registry_Correct__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Registered_Land_Registry_Correct__c
+          max_length: 255
+    - name: CCS_ReviewReturnedDocumentsCorrespondenc__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_ReviewReturnedDocumentsCorrespondenc__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_ReviewReturnedDocumentsCorrespondenc__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_ReviewReturnedDocumentsCorrespondenc__c
+          max_length: 255
+    - name: CCS_SecurityStatusToSecurityAvailable__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_SecurityStatusToSecurityAvailable__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_SecurityStatusToSecurityAvailable__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_SecurityStatusToSecurityAvailable__c
+          max_length: 255
+    - name: CCS_Send_SIO_to_Solicitors_Land_only__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Send_SIO_to_Solicitors_Land_only__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Send_SIO_to_Solicitors_Land_only__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Send_SIO_to_Solicitors_Land_only__c
+          max_length: 255
+    - name: CCS_Update_nCino_status_to_Perfected__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Update_nCino_status_to_Perfected__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Update_nCino_status_to_Perfected__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Update_nCino_status_to_Perfected__c
+          max_length: 255
+    - name: CCS_UpdatenCinoWithPacketNumber__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_UpdatenCinoWithPacketNumber__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_UpdatenCinoWithPacketNumber__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_UpdatenCinoWithPacketNumber__c
+          max_length: 255
+    - name: CCS_Upload_completed_documents_to_nCino__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Upload_completed_documents_to_nCino__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Upload_completed_documents_to_nCino__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Upload_completed_documents_to_nCino__c
+          max_length: 255
+    - name: CCS_nCino_Moved_to_Completed_Resolved__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_nCino_Moved_to_Completed_Resolved__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_nCino_Moved_to_Completed_Resolved__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_nCino_Moved_to_Completed_Resolved__c
+          max_length: 255
+    - name: Companies_House_Regn_Date_Updated__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Companies_House_Regn_Date_Updated__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Companies_House_Regn_Date_Updated__c
+          column_type: String
+      - length_check:
+          name: Length Check for Companies_House_Regn_Date_Updated__c
+          max_length: 255
+    - name: Consent_to_Lease_Required_Land_o_see_ROT__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Consent_to_Lease_Required_Land_o_see_ROT__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Consent_to_Lease_Required_Land_o_see_ROT__c
+          column_type: String
+      - length_check:
+          name: Length Check for Consent_to_Lease_Required_Land_o_see_ROT__c
+          max_length: 255
+    - name: LE_Case_Manager_Email__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LE_Case_Manager_Email__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LE_Case_Manager_Email__c
+          column_type: String
+      - length_check:
+          name: Length Check for LE_Case_Manager_Email__c
+          max_length: 1300
+    - name: LE_Case_Manager_Phone__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LE_Case_Manager_Phone__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LE_Case_Manager_Phone__c
+          column_type: String
+      - length_check:
+          name: Length Check for LE_Case_Manager_Phone__c
+          max_length: 1300
+    - name: LE_Case_Manager_Mobile__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LE_Case_Manager_Mobile__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LE_Case_Manager_Mobile__c
+          column_type: String
+      - length_check:
+          name: Length Check for LE_Case_Manager_Mobile__c
+          max_length: 1300
+    - name: CCS_Is_Bank_Entity__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_Bank_Entity__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_Bank_Entity__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_Bank_Entity__c
+          max_length: 255
+    - name: CCS_Fees_Letter_Sent_to_Customer__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Fees_Letter_Sent_to_Customer__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Fees_Letter_Sent_to_Customer__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Fees_Letter_Sent_to_Customer__c
+          max_length: 255
+    - name: CCS_Fees_Spreadsheet_Amended__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Fees_Spreadsheet_Amended__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Fees_Spreadsheet_Amended__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Fees_Spreadsheet_Amended__c
+          max_length: 255
+    - name: CCS_Security_Status_update_check__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security_Status_update_check__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security_Status_update_check__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security_Status_update_check__c
+          max_length: 255
+  - name: rskcsp_ds_account_collateral_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__Account__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Account__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Account__c
+          max_length: 18
+    - name: LLC_BI__Collateral__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral__c
+          max_length: 18
+    - name: LLC_BI__End_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__End_Date__c
+    - name: LLC_BI__Ownership_Percentage__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Ownership_Percentage__c
+    - name: LLC_BI__Relationship_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Relationship_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Relationship_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Relationship_Type__c
+          max_length: 1300
+    - name: LLC_BI__Start_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Start_Date__c
+    - name: LLC_BI__Collateral_Association__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Association__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral_Association__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral_Association__c
+          max_length: 255
+    - name: LLC_BI__Group_Association__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Group_Association__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Group_Association__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Group_Association__c
+          max_length: 255
+    - name: CCS_Lending_Value_Allocation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lending_Value_Allocation__c
+    - name: CCS_Perfection_Status__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Perfection_Status__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Perfection_Status__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Perfection_Status__c
+          max_length: 1300
+    - name: CCS_Security_Hyperlink__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security_Hyperlink__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security_Hyperlink__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security_Hyperlink__c
+          max_length: 1300
+    - name: CCS_Total_Current_Hard_Limits__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Total_Current_Hard_Limits__c
+    - name: CCS_Total_Lending_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Total_Lending_Value__c
+    - name: CCS_Certificate_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Certificate_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Certificate_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Certificate_Type__c
+          max_length: 255
+    - name: CCS_No_Of_Concurring_Partners__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_No_Of_Concurring_Partners__c
+    - name: CCS_No_Of_Non_Property_Owning_Partners__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_No_Of_Non_Property_Owning_Partners__c
+    - name: CCS_Partnership_Asset__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Partnership_Asset__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Partnership_Asset__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Partnership_Asset__c
+          max_length: 255
+    - name: CCS_Partnership_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Partnership_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Partnership_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Partnership_Type__c
+          max_length: 255
+    - name: CCS_Principal__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Principal__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Principal__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Principal__c
+          max_length: 255
+    - name: CCS_Property_Owning_Partners__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Property_Owning_Partners__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Property_Owning_Partners__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Property_Owning_Partners__c
+          max_length: 255
+  - name: rskcsp_ds_collateral_type_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: OwnerId
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for OwnerId
+          column_type: String
+      - length_check:
+          name: Length Check for OwnerId
+          max_length: 18
+    - name: Name
+      tests:
+      - not_null:
+          name: Non-Null Check for Name
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__Advance_Rate__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Advance_Rate__c
+    - name: LLC_BI__Expire_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Expire_Date__c
+    - name: LLC_BI__Field_Set__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Field_Set__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Field_Set__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Field_Set__c
+          max_length: 255
+    - name: LLC_BI__Regulatory_Rate__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Regulatory_Rate__c
+    - name: LLC_BI__Start_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Start_Date__c
+    - name: LLC_BI__Subtype__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Subtype__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Subtype__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Subtype__c
+          max_length: 255
+    - name: LLC_BI__Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Type__c
+          max_length: 255
+    - name: LLC_BI__Icon_Background_Color__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Icon_Background_Color__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Icon_Background_Color__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Icon_Background_Color__c
+          max_length: 255
+    - name: LLC_BI__Icon_Color__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Icon_Color__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Icon_Color__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Icon_Color__c
+          max_length: 255
+    - name: LLC_BI__Icon_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Icon_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Icon_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Icon_Type__c
+          max_length: 255
+    - name: LLC_BI__Screen__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Screen__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Screen__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Screen__c
+          max_length: 18
+    - name: LLC_BI__lookupKey__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__lookupKey__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__lookupKey__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__lookupKey__c
+          max_length: 255
+    - name: LLC_BI__Highest_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Highest_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Highest_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Highest_Type__c
+          max_length: 18
+    - name: LLC_BI__Parent_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Parent_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Parent_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Parent_Type__c
+          max_length: 18
+    - name: LLC_BI__Valuation_Source__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Valuation_Source__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Valuation_Source__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Valuation_Source__c
+          max_length: 255
+    - name: LLC_BI__Valuation_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Valuation_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Valuation_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Valuation_Type__c
+          max_length: 255
+    - name: LLC_BI__Category__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Category__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Category__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Category__c
+          max_length: 255
+    - name: LLC_BI__Leasing_Screen__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Leasing_Screen__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Leasing_Screen__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Leasing_Screen__c
+          max_length: 18
+    - name: LLC_BI__Group_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Group_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Group_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Group_Type__c
+          max_length: 255
+    - name: LLC_BI__Primary_Valuation_Sources__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Primary_Valuation_Sources__c
+    - name: LLC_BI__Valuation_Field_Set__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Valuation_Field_Set__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Valuation_Field_Set__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Valuation_Field_Set__c
+          max_length: 255
+    - name: CCS_RecordTypeName__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_RecordTypeName__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_RecordTypeName__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_RecordTypeName__c
+          max_length: 255
+  - name: rskcsp_ds_collateral_valuation_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__Collateral__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral__c
+          max_length: 18
+    - name: LLC_BI__Collateral_Type_SubType__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Type_SubType__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral_Type_SubType__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral_Type_SubType__c
+          max_length: 255
+    - name: LLC_BI__Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Comments__c
+          max_length: 32768
+    - name: LLC_BI__Source__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Source__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Source__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Source__c
+          max_length: 255
+    - name: LLC_BI__Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Type__c
+          max_length: 255
+    - name: LLC_BI__Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Value__c
+    - name: LLC_BI__Valuation_Details__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Valuation_Details__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Valuation_Details__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Valuation_Details__c
+          max_length: 4000
+    - name: LLC_BI__Valuation_Description__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Valuation_Description__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Valuation_Description__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Valuation_Description__c
+          max_length: 255
+    - name: LLC_BI__Raw_Valuation_Details__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Raw_Valuation_Details__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Raw_Valuation_Details__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Raw_Valuation_Details__c
+          max_length: 131072
+    - name: CCS_Date_of_Valuation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Valuation__c
+    - name: CCS_Existing_Use_Valuation_EUV_SH__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Existing_Use_Valuation_EUV_SH__c
+    - name: CCS_MVSTT__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_MVSTT__c
+    - name: CCS_Market_Rent_Value_OMRV__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Market_Rent_Value_OMRV__c
+    - name: CCS_Market_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Market_Value__c
+    - name: CCS_Open_Market_Value_Closed_MV2__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Open_Market_Value_Closed_MV2__c
+    - name: CCS_Goodwill_Applicable__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Goodwill_Applicable__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Goodwill_Applicable__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Goodwill_Applicable__c
+          max_length: 255
+    - name: CCS_Other_Valuation_Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Other_Valuation_Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Other_Valuation_Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Other_Valuation_Comments__c
+          max_length: 255
+    - name: CCS_Other_Valuation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Other_Valuation__c
+    - name: CCS_Reinstatement_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Reinstatement_Value__c
+    - name: CCS_Vacant_Possession_Closed_Value_MV3__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Vacant_Possession_Closed_Value_MV3__c
+    - name: CCS_Valuation_Method__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Valuation_Method__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Valuation_Method__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Valuation_Method__c
+          max_length: 255
+    - name: CCS_Valuer_Email__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Valuer_Email__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Valuer_Email__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Valuer_Email__c
+          max_length: 80
+    - name: CCS_Valuer_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Valuer_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Valuer_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Valuer_Name__c
+          max_length: 255
+    - name: CCS_Gross_Development_Value_GDV__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Gross_Development_Value_GDV__c
+    - name: CCS_Valuer_Telephone_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Valuer_Telephone_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Valuer_Telephone_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Valuer_Telephone_Number__c
+          max_length: 40
+    - name: CCS_Google_Valuer_Address__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Valuer_Address__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Valuer_Address__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Valuer_Address__Street__s
+          max_length: 255
+    - name: CCS_Google_Valuer_Address__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Valuer_Address__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Valuer_Address__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Valuer_Address__City__s
+          max_length: 40
+    - name: CCS_Google_Valuer_Address__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Valuer_Address__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Valuer_Address__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Valuer_Address__PostalCode__s
+          max_length: 20
+    - name: CCS_Google_Valuer_Address__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Valuer_Address__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Valuer_Address__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Valuer_Address__StateCode__s
+          max_length: 10
+    - name: CCS_Google_Valuer_Address__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Valuer_Address__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Valuer_Address__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Valuer_Address__CountryCode__s
+          max_length: 10
+    - name: CCS_Google_Valuer_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Valuer_Address__c
+    - name: CCS_Goodwill_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Goodwill_Value__c
+    - name: CCS_Proposed_Goodwill_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Proposed_Goodwill_Value__c
+    - name: CCS_Proposed_valuation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Proposed_valuation__c
+  - name: rskcsp_ds_collateral_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: OwnerId
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for OwnerId
+          column_type: String
+      - length_check:
+          name: Length Check for OwnerId
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: RecordTypeId
+      tests:
+      - not_null:
+          name: Non-Null Check for RecordTypeId
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for RecordTypeId
+          column_type: String
+      - length_check:
+          name: Length Check for RecordTypeId
+          max_length: 18
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__Appraisal_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Appraisal_Date__c
+    - name: LLC_BI__Assessment_Method__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Assessment_Method__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Assessment_Method__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Assessment_Method__c
+          max_length: 255
+    - name: LLC_BI__City__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__City__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__City__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__City__c
+          max_length: 255
+    - name: LLC_BI__Collateral_Insurance_Company__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Insurance_Company__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral_Insurance_Company__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral_Insurance_Company__c
+          max_length: 255
+    - name: LLC_BI__Collateral_Insurance_Policy_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Insurance_Policy_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral_Insurance_Policy_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral_Insurance_Policy_Number__c
+          max_length: 80
+    - name: LLC_BI__Collateral_Type__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral_Type__c
+          max_length: 18
+    - name: LLC_BI__Combined_Percent_Pledged__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Combined_Percent_Pledged__c
+    - name: LLC_BI__Description__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Description__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Description__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Description__c
+          max_length: 255
+    - name: LLC_BI__Insurance_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Insurance_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Insurance_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Insurance_Type__c
+          max_length: 255
+    - name: LLC_BI__Number_of_Shares__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Number_of_Shares__c
+    - name: LLC_BI__Remaining_Lendable_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Remaining_Lendable_Value__c
+    - name: LLC_BI__State__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__State__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__State__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__State__c
+          max_length: 255
+    - name: LLC_BI__Year_Built__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Year_Built__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Year_Built__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Year_Built__c
+          max_length: 4
+    - name: LLC_BI__Zip_Code__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Zip_Code__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Zip_Code__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Zip_Code__c
+          max_length: 10
+    - name: LLC_BI__Total_Lien_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Lien_Amount__c
+    - name: LLC_BI__Total_Pledge_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Pledge_Amount__c
+    - name: Migration_ID__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Migration_ID__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Migration_ID__c
+          column_type: String
+      - length_check:
+          name: Length Check for Migration_ID__c
+          max_length: 18
+    - name: LLC_BI__Maturity_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Maturity_Date__c
+    - name: LLC_BI__Rental_Income__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Rental_Income__c
+    - name: cm_Condo_Project_Name_if_master_policy__c
+      tests:
+      - not_null:
+          name: Non-Null Check for cm_Condo_Project_Name_if_master_policy__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for cm_Condo_Project_Name_if_master_policy__c
+          column_type: String
+      - length_check:
+          name: Length Check for cm_Condo_Project_Name_if_master_policy__c
+          max_length: 255
+    - name: cm_Insurance_Coverage_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for cm_Insurance_Coverage_Amount__c
+    - name: cm_Insurance_Effective_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for cm_Insurance_Effective_Date__c
+    - name: CCS_IsThisFacilityLBCM__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_IsThisFacilityLBCM__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_IsThisFacilityLBCM__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_IsThisFacilityLBCM__c
+          max_length: 255
+    - name: CCS_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Type__c
+          max_length: 255
+    - name: CCS_Subtype1__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Subtype1__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Subtype1__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Subtype1__c
+          max_length: 255
+    - name: CCS_Account_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Account_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Account_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Account_Number__c
+          max_length: 8
+    - name: CCS_Account_Title__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Account_Title__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Account_Title__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Account_Title__c
+          max_length: 255
+    - name: CCS_Acreage__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Acreage__c
+    - name: CCS_All_Monies__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_All_Monies__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_All_Monies__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_All_Monies__c
+          max_length: 255
+    - name: CCS_Amount_Limited_To__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Amount_Limited_To__c
+    - name: CCS_Are_there_any_existing_Debentures__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Are_there_any_existing_Debentures__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Are_there_any_existing_Debentures__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Are_there_any_existing_Debentures__c
+          max_length: 255
+    - name: CCS_Asset_Insured__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Asset_Insured__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Asset_Insured__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Asset_Insured__c
+          max_length: 255
+    - name: CCS_Bank_Entity__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Bank_Entity__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Bank_Entity__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Bank_Entity__c
+          max_length: 255
+    - name: CCS_Basis_of_Valuation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Basis_of_Valuation__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Basis_of_Valuation__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Basis_of_Valuation__c
+          max_length: 255
+    - name: CCS_Commercial_Property_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Commercial_Property_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Commercial_Property_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Commercial_Property_Type__c
+          max_length: 255
+    - name: CCS_Date_of_Charge__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Charge__c
+    - name: CCS_Date_of_Debenture__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Debenture__c
+    - name: CCS_Date_of_Deed_of_Priority__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Deed_of_Priority__c
+    - name: CCS_Date_of_Factoring_Agreement__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Factoring_Agreement__c
+    - name: CCS_Date_of_Guarantee__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Guarantee__c
+    - name: CCS_Date_of_Property_Occupancy__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Property_Occupancy__c
+    - name: CCS_Date_of_Registration__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Registration__c
+    - name: CCS_Date_of_Registration_at_Companies__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Registration_at_Companies__c
+    - name: CCS_Deed_of_Postponement__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Deed_of_Postponement__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Deed_of_Postponement__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Deed_of_Postponement__c
+          max_length: 255
+    - name: CCS_Deed_of_Priority_Details__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Deed_of_Priority_Details__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Deed_of_Priority_Details__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Deed_of_Priority_Details__c
+          max_length: 255
+    - name: CCS_Description_of_Stock_Portfolio__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Description_of_Stock_Portfolio__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Description_of_Stock_Portfolio__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Description_of_Stock_Portfolio__c
+          max_length: 255
+    - name: CCS_Document_Storage_Location__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Document_Storage_Location__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Document_Storage_Location__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Document_Storage_Location__c
+          max_length: 255
+    - name: CCS_EPC_Assessment_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_EPC_Assessment_Date__c
+    - name: CCS_EPC_Expiry_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_EPC_Expiry_Date__c
+    - name: CCS_EPC_Rating__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_EPC_Rating__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_EPC_Rating__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_EPC_Rating__c
+          max_length: 255
+    - name: CCS_EPC_Reference_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_EPC_Reference_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_EPC_Reference_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_EPC_Reference_Number__c
+          max_length: 255
+    - name: CCS_Factoring_Agreement_Details__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Factoring_Agreement_Details__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Factoring_Agreement_Details__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Factoring_Agreement_Details__c
+          max_length: 255
+    - name: CCS_Factoring_Agreement__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Factoring_Agreement__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Factoring_Agreement__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Factoring_Agreement__c
+          max_length: 255
+    - name: CCS_Form_Used__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Form_Used__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Form_Used__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Form_Used__c
+          max_length: 255
+    - name: CCS_HMLR_Title_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_HMLR_Title_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_HMLR_Title_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_HMLR_Title_Number__c
+          max_length: 255
+    - name: CCS_HMO_Housing_Model__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_HMO_Housing_Model__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_HMO_Housing_Model__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_HMO_Housing_Model__c
+          max_length: 255
+    - name: CCS_Hull_Insurance_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Hull_Insurance_Amount__c
+    - name: CCS_Independent_Legal_Advice_Taken__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Independent_Legal_Advice_Taken__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Independent_Legal_Advice_Taken__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Independent_Legal_Advice_Taken__c
+          max_length: 255
+    - name: CCS_Insurance_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Insurance_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Insurance_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Insurance_Type__c
+          max_length: 255
+    - name: CCS_Insurance_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Insurance_Value__c
+    - name: CCS_Is_this_Debenture_to_remain__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_this_Debenture_to_remain__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_this_Debenture_to_remain__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_this_Debenture_to_remain__c
+          max_length: 255
+    - name: CCS_Jurisdiction__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Jurisdiction__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Jurisdiction__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Jurisdiction__c
+          max_length: 255
+    - name: CCS_LBCM_Ranking__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_LBCM_Ranking__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_LBCM_Ranking__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_LBCM_Ranking__c
+          max_length: 255
+    - name: CCS_LBCM_Shared__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_LBCM_Shared__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_LBCM_Shared__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_LBCM_Shared__c
+          max_length: 255
+    - name: CCS_Lease_End_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lease_End_Date__c
+    - name: CCS_Limitation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Limitation__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Limitation__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Limitation__c
+          max_length: 255
+    - name: CCS_Machinery_Insurance_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Machinery_Insurance_Amount__c
+    - name: CCS_Maturity_Expiry_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Maturity_Expiry_Date__c
+    - name: CCS_Minimum_Death_Benefit__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Minimum_Death_Benefit__c
+    - name: CCS_Name_of_Boat__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Name_of_Boat__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Name_of_Boat__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Name_of_Boat__c
+          max_length: 255
+    - name: CCS_Name_of_Stock_Portfolio__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Name_of_Stock_Portfolio__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Name_of_Stock_Portfolio__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Name_of_Stock_Portfolio__c
+          max_length: 255
+    - name: CCS_Occupancy__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Occupancy__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Occupancy__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Occupancy__c
+          max_length: 255
+    - name: CCS_Perfected_Alert_Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Perfected_Alert_Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Perfected_Alert_Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Perfected_Alert_Comments__c
+          max_length: 255
+    - name: CCS_Perfection_Status__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Perfection_Status__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Perfection_Status__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Perfection_Status__c
+          max_length: 255
+    - name: CCS_Ranking_of_Charge__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Ranking_of_Charge__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Ranking_of_Charge__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Ranking_of_Charge__c
+          max_length: 255
+    - name: CCS_Reference_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Reference_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Reference_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Reference_Number__c
+          max_length: 255
+    - name: CCS_Renewal_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Renewal_Date__c
+    - name: CCS_Residential_Property_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Residential_Property_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Residential_Property_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Residential_Property_Type__c
+          max_length: 255
+    - name: CCS_Safe_to_Lend_Alert_Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Safe_to_Lend_Alert_Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Safe_to_Lend_Alert_Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Safe_to_Lend_Alert_Comments__c
+          max_length: 255
+    - name: CCS_Single_Farm_Payments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Single_Farm_Payments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Single_Farm_Payments__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Single_Farm_Payments__c
+          max_length: 255
+    - name: CCS_Sort_Code__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Sort_Code__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Sort_Code__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Sort_Code__c
+          max_length: 6
+    - name: CCS_Square_Footage__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Square_Footage__c
+    - name: CCS_Stocks_and_Shares_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Stocks_and_Shares_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Stocks_and_Shares_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Stocks_and_Shares_Type__c
+          max_length: 255
+    - name: CCS_Sum_Assured__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Sum_Assured__c
+    - name: CCS_Supporting_Security_Held__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Supporting_Security_Held__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Supporting_Security_Held__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Supporting_Security_Held__c
+          max_length: 255
+    - name: CCS_Type_of_Ship__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Type_of_Ship__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Type_of_Ship__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Type_of_Ship__c
+          max_length: 255
+    - name: CCS_Value_As_At__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Value_As_At__c
+    - name: CCS_Deed_of_Priority__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Deed_of_Priority__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Deed_of_Priority__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Deed_of_Priority__c
+          max_length: 1300
+    - name: CCS_Life_Policy_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Life_Policy_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Life_Policy_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Life_Policy_Type__c
+          max_length: 255
+    - name: CCS_Other_Life_Policy_Details__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Other_Life_Policy_Details__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Other_Life_Policy_Details__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Other_Life_Policy_Details__c
+          max_length: 255
+    - name: CCS_Professional_Valuation__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Professional_Valuation__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Professional_Valuation__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Professional_Valuation__c
+          max_length: 255
+    - name: CCS_Unexpired_Lease_Term_Years__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Unexpired_Lease_Term_Years__c
+    - name: CCS_Application__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Application__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Application__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Application__c
+          max_length: 18
+    - name: CCS_Other_Security_Description__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Other_Security_Description__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Other_Security_Description__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Other_Security_Description__c
+          max_length: 255
+    - name: CCS_Surrender_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Surrender_Value__c
+    - name: CCS_Gross_Value_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Gross_Value_Amount__c
+    - name: CCS_LendingValue_Percentage__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_LendingValue_Percentage__c
+    - name: CCS_Lending_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lending_Value__c
+    - name: CCS_Security_Name_Hyper__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security_Name_Hyper__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security_Name_Hyper__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security_Name_Hyper__c
+          max_length: 1300
+    - name: CCS_Security_Case__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security_Case__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security_Case__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security_Case__c
+          max_length: 18
+    - name: CCS_Valuation_Report_Uploaded__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Valuation_Report_Uploaded__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Valuation_Report_Uploaded__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Valuation_Report_Uploaded__c
+          max_length: 255
+    - name: CCS_Status1__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Status1__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Status1__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Status1__c
+          max_length: 1300
+    - name: CCS_Outstanding_Amount_Latest__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Outstanding_Amount_Latest__c
+    - name: CCS_Google_Address__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__Street__s
+          max_length: 255
+    - name: CCS_Google_Address__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__City__s
+          max_length: 40
+    - name: CCS_Google_Address__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__PostalCode__s
+          max_length: 20
+    - name: CCS_Google_Address__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__StateCode__s
+          max_length: 10
+    - name: CCS_Google_Address__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address__CountryCode__s
+          max_length: 10
+    - name: CCS_Google_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address__c
+    - name: CCS_Gross_Value_Amount_SecVal__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Gross_Value_Amount_SecVal__c
+    - name: CCS_Date_of_Registration_at_HMLR__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Registration_at_HMLR__c
+    - name: CCS_Security_Workflow_Model__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security_Workflow_Model__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security_Workflow_Model__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security_Workflow_Model__c
+          max_length: 1300
+    - name: CCS_Case_Check_All_required_Document__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Case_Check_All_required_Document__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Case_Check_All_required_Document__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Case_Check_All_required_Document__c
+          max_length: 255
+    - name: CCS_CheckSignaturesSolicitorNotWitness__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_CheckSignaturesSolicitorNotWitness__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_CheckSignaturesSolicitorNotWitness__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_CheckSignaturesSolicitorNotWitness__c
+          max_length: 255
+    - name: CCS_Account_Number_Funds_Credited_To__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Account_Number_Funds_Credited_To__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Account_Number_Funds_Credited_To__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Account_Number_Funds_Credited_To__c
+          max_length: 8
+    - name: CCS_Amount_of_Postponement__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Amount_of_Postponement__c
+    - name: CCS_Assignation_Assignment_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Assignation_Assignment_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Assignation_Assignment_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Assignation_Assignment_Type__c
+          max_length: 255
+    - name: CCS_BankConfirmsCommercialBenefitExists__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BankConfirmsCommercialBenefitExists__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_BankConfirmsCommercialBenefitExists__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_BankConfirmsCommercialBenefitExists__c
+          max_length: 255
+    - name: CCS_Bank_Has_Confirmed_Policy_Assignable__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Bank_Has_Confirmed_Policy_Assignable__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Bank_Has_Confirmed_Policy_Assignable__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Bank_Has_Confirmed_Policy_Assignable__c
+          max_length: 255
+    - name: CCS_OGSA_Gross_Value_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_OGSA_Gross_Value_Amount__c
+    - name: CCS_OGSA_Lending_Value_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_OGSA_Lending_Value_Amount__c
+    - name: CCS_Multi_Charge_Form_Asset__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Multi_Charge_Form_Asset__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Multi_Charge_Form_Asset__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Multi_Charge_Form_Asset__c
+          max_length: 255
+    - name: CCS_Branch_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Branch_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Branch_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Branch_Name__c
+          max_length: 255
+    - name: CCS_Consent_to_Disclose_688_Held__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Consent_to_Disclose_688_Held__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Consent_to_Disclose_688_Held__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Consent_to_Disclose_688_Held__c
+          max_length: 255
+    - name: CCS_Correspond_With__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Correspond_With__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Correspond_With__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Correspond_With__c
+          max_length: 255
+    - name: CCS_Details_of_Undue_Influence__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Details_of_Undue_Influence__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Details_of_Undue_Influence__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Details_of_Undue_Influence__c
+          max_length: 255
+    - name: CCS_Does_Grantor_Have_a_Personal_Account__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Does_Grantor_Have_a_Personal_Account__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Does_Grantor_Have_a_Personal_Account__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Does_Grantor_Have_a_Personal_Account__c
+          max_length: 255
+    - name: CCS_Does_the_Grantor_Have_a_Parent__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Does_the_Grantor_Have_a_Parent__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Does_the_Grantor_Have_a_Parent__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Does_the_Grantor_Have_a_Parent__c
+          max_length: 255
+    - name: CCS_Email_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Email_Address__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Email_Address__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Email_Address__c
+          max_length: 80
+    - name: CCS_Existing_Proposed_Security_Details__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Existing_Proposed_Security_Details__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Existing_Proposed_Security_Details__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Existing_Proposed_Security_Details__c
+          max_length: 255
+    - name: CCS_Existing_Securities_to_be_Discharged__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Existing_Securities_to_be_Discharged__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Existing_Securities_to_be_Discharged__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Existing_Securities_to_be_Discharged__c
+          max_length: 255
+    - name: CCS_Form_688_Held__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Form_688_Held__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Form_688_Held__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Form_688_Held__c
+          max_length: 255
+    - name: CCS_Future_Development__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Future_Development__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Future_Development__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Future_Development__c
+          max_length: 255
+    - name: CCS_Insurance_Office__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Insurance_Office__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Insurance_Office__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Insurance_Office__c
+          max_length: 255
+    - name: CCS_Basis_of_Valuation_New__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Basis_of_Valuation_New__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Basis_of_Valuation_New__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Basis_of_Valuation_New__c
+          max_length: 255
+    - name: CCS_Goodwill_Applicable__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Goodwill_Applicable__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Goodwill_Applicable__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Goodwill_Applicable__c
+          max_length: 255
+    - name: CCS_Is_Bank_Lending_Over_500k__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_Bank_Lending_Over_500k__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_Bank_Lending_Over_500k__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_Bank_Lending_Over_500k__c
+          max_length: 255
+    - name: CCS_Is_Grantor_Director_of_Customer__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_Grantor_Director_of_Customer__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_Grantor_Director_of_Customer__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_Grantor_Director_of_Customer__c
+          max_length: 255
+    - name: CCS_Is_Grantor_Full_Time_in_Business__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_Grantor_Full_Time_in_Business__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_Grantor_Full_Time_in_Business__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_Grantor_Full_Time_in_Business__c
+          max_length: 255
+    - name: CCS_Is_the_Grantor_Part_of_a_Group__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_the_Grantor_Part_of_a_Group__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_the_Grantor_Part_of_a_Group__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_the_Grantor_Part_of_a_Group__c
+          max_length: 255
+    - name: CCS_Is_the_Grantor_the_Parent__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_the_Grantor_the_Parent__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_the_Grantor_the_Parent__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_the_Grantor_the_Parent__c
+          max_length: 255
+    - name: CCS_Lending_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lending_Amount__c
+    - name: CCS_Letter_of_Postponement__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Letter_of_Postponement__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Letter_of_Postponement__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Letter_of_Postponement__c
+          max_length: 255
+    - name: CCS_Licence_Required__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Licence_Required__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Licence_Required__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Licence_Required__c
+          max_length: 255
+    - name: CCS_Life_Lives_Assured__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Life_Lives_Assured__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Life_Lives_Assured__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Life_Lives_Assured__c
+          max_length: 255
+    - name: CCS_NonF2FSolicitorConfirmationApproved__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_NonF2FSolicitorConfirmationApproved__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_NonF2FSolicitorConfirmationApproved__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_NonF2FSolicitorConfirmationApproved__c
+          max_length: 255
+    - name: CCS_Parent_Company_Name__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Parent_Company_Name__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Parent_Company_Name__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Parent_Company_Name__c
+          max_length: 255
+    - name: CCS_Parent_Company_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Parent_Company_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Parent_Company_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Parent_Company_Number__c
+          max_length: 255
+    - name: CCS_Parties_Involved__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Parties_Involved__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Parties_Involved__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Parties_Involved__c
+          max_length: 255
+    - name: CCS_Policy_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Policy_Date__c
+    - name: CCS_Prior_Mortgage_s__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Prior_Mortgage_s__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Prior_Mortgage_s__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Prior_Mortgage_s__c
+          max_length: 255
+    - name: CCS_Projected_Total_Liability_3rd_Party__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Projected_Total_Liability_3rd_Party__c
+    - name: CCS_Projected_Total_Liability__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Projected_Total_Liability__c
+    - name: CCS_Purchase_Price__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Purchase_Price__c
+    - name: CCS_Security_Existing_Proposed__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Security_Existing_Proposed__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Security_Existing_Proposed__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Security_Existing_Proposed__c
+          max_length: 255
+    - name: CCS_Settlement_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Settlement_Date__c
+    - name: CCS_Sort_Code_Funds_Credited_To__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Sort_Code_Funds_Credited_To__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Sort_Code_Funds_Credited_To__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Sort_Code_Funds_Credited_To__c
+          max_length: 6
+    - name: CCS_Standard_Family_Tree__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Standard_Family_Tree__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Standard_Family_Tree__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Standard_Family_Tree__c
+          max_length: 255
+    - name: CCS_Term_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Term_Date__c
+    - name: CCS_Transaction_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Transaction_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Transaction_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Transaction_Type__c
+          max_length: 255
+    - name: CCS_Undue_Influence__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Undue_Influence__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Undue_Influence__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Undue_Influence__c
+          max_length: 255
+    - name: CCS_Will_Funds_Be_Paid_Into_BoS_Account__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Will_Funds_Be_Paid_Into_BoS_Account__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Will_Funds_Be_Paid_Into_BoS_Account__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Will_Funds_Be_Paid_Into_BoS_Account__c
+          max_length: 255
+    - name: CCS_Google_Address1__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Address1__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Address1__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Address1__c
+          max_length: 1300
+    - name: Adequate_Insurance_Sep_Rep_Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Adequate_Insurance_Sep_Rep_Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Adequate_Insurance_Sep_Rep_Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for Adequate_Insurance_Sep_Rep_Comments__c
+          max_length: 32768
+    - name: Decisioning_Codes_Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Decisioning_Codes_Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Decisioning_Codes_Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for Decisioning_Codes_Comments__c
+          max_length: 32768
+    - name: Policy_Considerations_Comments__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Policy_Considerations_Comments__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Policy_Considerations_Comments__c
+          column_type: String
+      - length_check:
+          name: Length Check for Policy_Considerations_Comments__c
+          max_length: 32768
+    - name: Security_Commentary__c
+      tests:
+      - not_null:
+          name: Non-Null Check for Security_Commentary__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Security_Commentary__c
+          column_type: String
+      - length_check:
+          name: Length Check for Security_Commentary__c
+          max_length: 32768
+    - name: CCS_Bypass_Validation_Rule_Check__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Bypass_Validation_Rule_Check__c
+    - name: CCS_Check_and_upload_Final_IPRS_SAM_toDM__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Check_and_upload_Final_IPRS_SAM_toDM__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Check_and_upload_Final_IPRS_SAM_toDM__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Check_and_upload_Final_IPRS_SAM_toDM__c
+          max_length: 255
+    - name: CCS_CompaniesHouseRegistrationComplete__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_CompaniesHouseRegistrationComplete__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_CompaniesHouseRegistrationComplete__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_CompaniesHouseRegistrationComplete__c
+          max_length: 255
+    - name: CCS_Companies_House_Regd_Cert_Held__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Companies_House_Regd_Cert_Held__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Companies_House_Regd_Cert_Held__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Companies_House_Regd_Cert_Held__c
+          max_length: 255
+    - name: CCS_CompleteCompaniesHouseSearchforDeben__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_CompleteCompaniesHouseSearchforDeben__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_CompleteCompaniesHouseSearchforDeben__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_CompleteCompaniesHouseSearchforDeben__c
+          max_length: 255
+    - name: CCS_Complete_Document_Redaction__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Complete_Document_Redaction__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Complete_Document_Redaction__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Complete_Document_Redaction__c
+          max_length: 255
+    - name: CCS_Consent_to_Lease_Required_Land_o_ROT__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Consent_to_Lease_Required_Land_o_ROT__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Consent_to_Lease_Required_Land_o_ROT__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Consent_to_Lease_Required_Land_o_ROT__c
+          max_length: 255
+    - name: CCS_Indemnity_Policies_Required__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Indemnity_Policies_Required__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Indemnity_Policies_Required__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Indemnity_Policies_Required__c
+          max_length: 255
+    - name: CCS_Packet_Sent_To_Iron_Mountain__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Packet_Sent_To_Iron_Mountain__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Packet_Sent_To_Iron_Mountain__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Packet_Sent_To_Iron_Mountain__c
+          max_length: 255
+    - name: CCS_Registered_Land_Registry_Correct__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Registered_Land_Registry_Correct__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Registered_Land_Registry_Correct__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Registered_Land_Registry_Correct__c
+          max_length: 255
+    - name: CCS_ReviewReturnedDocumentsCorrespondenc__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_ReviewReturnedDocumentsCorrespondenc__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_ReviewReturnedDocumentsCorrespondenc__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_ReviewReturnedDocumentsCorrespondenc__c
+          max_length: 255
+    - name: CCS_Send_SIO_to_Solicitors_Land_only__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Send_SIO_to_Solicitors_Land_only__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Send_SIO_to_Solicitors_Land_only__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Send_SIO_to_Solicitors_Land_only__c
+          max_length: 255
+    - name: CCS_Update_Security_Status__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Update_Security_Status__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Update_Security_Status__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Update_Security_Status__c
+          max_length: 255
+    - name: CCS_Update_Security_fields_in_PP_check__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Update_Security_fields_in_PP_check__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Update_Security_fields_in_PP_check__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Update_Security_fields_in_PP_check__c
+          max_length: 255
+    - name: CCS_Update_Security_fields_in_nCino__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Update_Security_fields_in_nCino__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Update_Security_fields_in_nCino__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Update_Security_fields_in_nCino__c
+          max_length: 255
+    - name: CCS_Update_nCino_status_to_Perfected__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Update_nCino_status_to_Perfected__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Update_nCino_status_to_Perfected__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Update_nCino_status_to_Perfected__c
+          max_length: 255
+    - name: CCS_UpdatenCinoWithPacketNumber__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_UpdatenCinoWithPacketNumber__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_UpdatenCinoWithPacketNumber__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_UpdatenCinoWithPacketNumber__c
+          max_length: 255
+    - name: CCS_Upload_completed_documents_to_nCino__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Upload_completed_documents_to_nCino__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Upload_completed_documents_to_nCino__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Upload_completed_documents_to_nCino__c
+          max_length: 255
+    - name: CCS_BranchAddressInclPostcode__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BranchAddressInclPostcode__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_BranchAddressInclPostcode__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_BranchAddressInclPostcode__Street__s
+          max_length: 255
+    - name: CCS_BranchAddressInclPostcode__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BranchAddressInclPostcode__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_BranchAddressInclPostcode__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_BranchAddressInclPostcode__City__s
+          max_length: 40
+    - name: CCS_BranchAddressInclPostcode__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BranchAddressInclPostcode__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_BranchAddressInclPostcode__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_BranchAddressInclPostcode__PostalCode__s
+          max_length: 20
+    - name: CCS_BranchAddressInclPostcode__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BranchAddressInclPostcode__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_BranchAddressInclPostcode__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_BranchAddressInclPostcode__StateCode__s
+          max_length: 10
+    - name: CCS_BranchAddressInclPostcode__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BranchAddressInclPostcode__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_BranchAddressInclPostcode__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_BranchAddressInclPostcode__CountryCode__s
+          max_length: 10
+    - name: CCS_BranchAddressInclPostcode__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_BranchAddressInclPostcode__c
+    - name: CCS_InsurerAddressInclPostcode__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_InsurerAddressInclPostcode__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_InsurerAddressInclPostcode__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_InsurerAddressInclPostcode__Street__s
+          max_length: 255
+    - name: CCS_InsurerAddressInclPostcode__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_InsurerAddressInclPostcode__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_InsurerAddressInclPostcode__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_InsurerAddressInclPostcode__City__s
+          max_length: 40
+    - name: CCS_InsurerAddressInclPostcode__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_InsurerAddressInclPostcode__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_InsurerAddressInclPostcode__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_InsurerAddressInclPostcode__PostalCode__s
+          max_length: 20
+    - name: CCS_InsurerAddressInclPostcode__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_InsurerAddressInclPostcode__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_InsurerAddressInclPostcode__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_InsurerAddressInclPostcode__StateCode__s
+          max_length: 10
+    - name: CCS_InsurerAddressInclPostcode__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_InsurerAddressInclPostcode__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_InsurerAddressInclPostcode__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_InsurerAddressInclPostcode__CountryCode__s
+          max_length: 10
+    - name: CCS_InsurerAddressInclPostcode__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_InsurerAddressInclPostcode__c
+    - name: CCS_Proposed_Goodwill_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Proposed_Goodwill_Value__c
+    - name: CCS_Are_Adult_Occupiers_Living_in_the_Pr__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Are_Adult_Occupiers_Living_in_the_Pr__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Are_Adult_Occupiers_Living_in_the_Pr__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Are_Adult_Occupiers_Living_in_the_Pr__c
+          max_length: 255
+    - name: CCS_Are_all_Partners_Titleholders__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Are_all_Partners_Titleholders__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Are_all_Partners_Titleholders__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Are_all_Partners_Titleholders__c
+          max_length: 255
+    - name: CCS_Do_We_Require_Collateral_Warranties__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Do_We_Require_Collateral_Warranties__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Do_We_Require_Collateral_Warranties__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Do_We_Require_Collateral_Warranties__c
+          max_length: 255
+    - name: CCS_Does_CCA_Apply__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Does_CCA_Apply__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Does_CCA_Apply__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Does_CCA_Apply__c
+          max_length: 255
+    - name: CCS_Does_Etridge_Apply__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Does_Etridge_Apply__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Does_Etridge_Apply__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Does_Etridge_Apply__c
+          max_length: 255
+    - name: CCS_Financial_Assistance_Required__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Financial_Assistance_Required__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Financial_Assistance_Required__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Financial_Assistance_Required__c
+          max_length: 255
+    - name: CCS_Is_Provider_a_Charity_IPC__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_Provider_a_Charity_IPC__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_Provider_a_Charity_IPC__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_Provider_a_Charity_IPC__c
+          max_length: 255
+    - name: CCS_Is_The_Charge_Indirect__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_The_Charge_Indirect__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_The_Charge_Indirect__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_The_Charge_Indirect__c
+          max_length: 255
+    - name: CCS_Is_This_An_Uplift__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_This_An_Uplift__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_This_An_Uplift__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_This_An_Uplift__c
+          max_length: 255
+    - name: CCS_Is_This_For_Property_Development__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_This_For_Property_Development__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_This_For_Property_Development__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_This_For_Property_Development__c
+          max_length: 255
+    - name: CCS_Is_the_Security_Provider_a_Pension__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_the_Security_Provider_a_Pension__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_the_Security_Provider_a_Pension__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_the_Security_Provider_a_Pension__c
+          max_length: 255
+    - name: CCS_Is_this_Policy_held_in_Trust__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_this_Policy_held_in_Trust__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_this_Policy_held_in_Trust__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_this_Policy_held_in_Trust__c
+          max_length: 255
+    - name: CCS_Is_this_a_Partnership_Asset__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_this_a_Partnership_Asset__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_this_a_Partnership_Asset__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_this_a_Partnership_Asset__c
+          max_length: 255
+    - name: CCS_Is_this_a_Professional_Partnership__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_this_a_Professional_Partnership__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_this_a_Professional_Partnership__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_this_a_Professional_Partnership__c
+          max_length: 255
+    - name: CCS_Is_this_a_Purchase__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Is_this_a_Purchase__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Is_this_a_Purchase__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Is_this_a_Purchase__c
+          max_length: 255
+    - name: CCS_Life_Policy_Holder__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Life_Policy_Holder__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Life_Policy_Holder__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Life_Policy_Holder__c
+          max_length: 100
+    - name: CCS_Only_One_Company_Official_Registered__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Only_One_Company_Official_Registered__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Only_One_Company_Official_Registered__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Only_One_Company_Official_Registered__c
+          max_length: 255
+    - name: CCS_Purchase_Price_2__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Purchase_Price_2__c
+    - name: CCS_Term_Date_2__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Term_Date_2__c
+    - name: CCS_Which_Entity_is_the_Lead_or_Parent__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Which_Entity_is_the_Lead_or_Parent__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Which_Entity_is_the_Lead_or_Parent__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Which_Entity_is_the_Lead_or_Parent__c
+          max_length: 100
+    - name: CCS_Account_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Account_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Account_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Account_Type__c
+          max_length: 255
+    - name: CCS_If_Other_Detail__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_If_Other_Detail__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_If_Other_Detail__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_If_Other_Detail__c
+          max_length: 100
+    - name: CCS_Conditional_Facility_Profile_Check__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Conditional_Facility_Profile_Check__c
+  - name: rskcsp_ds_lien_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__Collateral__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral__c
+          max_length: 18
+    - name: LLC_BI__Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Amount__c
+    - name: LLC_BI__Expire_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Expire_Date__c
+    - name: LLC_BI__Institution__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Institution__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Institution__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Institution__c
+          max_length: 255
+    - name: LLC_BI__Loan_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Loan_Number__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Loan_Number__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Loan_Number__c
+          max_length: 1300
+    - name: LLC_BI__Loan__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Loan__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Loan__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Loan__c
+          max_length: 18
+    - name: LLC_BI__Position__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Position__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Position__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Position__c
+          max_length: 255
+    - name: CCS_Date_of_Charge__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Date_of_Charge__c
+    - name: CCS_Lender__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Lender__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Lender__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Lender__c
+          max_length: 255
+    - name: CCS_Account_Number__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Account_Number__c
+    - name: CCS_Action_Required__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Action_Required__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Action_Required__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Action_Required__c
+          max_length: 255
+    - name: CCS_Email_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Email_Address__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Email_Address__c
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Email_Address__c
+          max_length: 80
+    - name: CCS_Outstanding_Balance__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Outstanding_Balance__c
+    - name: CCS_AddressInclPostcode__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_AddressInclPostcode__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_AddressInclPostcode__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_AddressInclPostcode__Street__s
+          max_length: 255
+    - name: CCS_AddressInclPostcode__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_AddressInclPostcode__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_AddressInclPostcode__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_AddressInclPostcode__City__s
+          max_length: 40
+    - name: CCS_AddressInclPostcode__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_AddressInclPostcode__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_AddressInclPostcode__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_AddressInclPostcode__PostalCode__s
+          max_length: 20
+    - name: CCS_AddressInclPostcode__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_AddressInclPostcode__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_AddressInclPostcode__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_AddressInclPostcode__StateCode__s
+          max_length: 10
+    - name: CCS_AddressInclPostcode__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_AddressInclPostcode__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_AddressInclPostcode__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_AddressInclPostcode__CountryCode__s
+          max_length: 10
+    - name: CCS_AddressInclPostcode__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_AddressInclPostcode__c
+  - name: rskcsp_ds_loan_collateral2_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: Name
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__Collateral__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral__c
+          max_length: 18
+    - name: LLC_BI__Loan_Collateral_Aggregate__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Loan_Collateral_Aggregate__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Loan_Collateral_Aggregate__c
+          max_length: 18
+    - name: LLC_BI__Advance_Rate_Override__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Advance_Rate_Override__c
+    - name: LLC_BI__Advance_Rate__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Advance_Rate__c
+    - name: LLC_BI__Amount_Pledged__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Amount_Pledged__c
+    - name: LLC_BI__Collateral_Type__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Type__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Collateral_Type__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Collateral_Type__c
+          max_length: 1300
+    - name: LLC_BI__Collateral_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Value__c
+    - name: LLC_BI__Current_Lendable_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Current_Lendable_Value__c
+    - name: LLC_BI__End_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__End_Date__c
+    - name: LLC_BI__First_Lien_Position_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__First_Lien_Position_Value__c
+    - name: LLC_BI__Lien_Position__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Lien_Position__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Lien_Position__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Lien_Position__c
+          max_length: 255
+    - name: LLC_BI__Loan__c
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Loan__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Loan__c
+          max_length: 18
+    - name: LLC_BI__Original_Lendable_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Original_Lendable_Value__c
+    - name: LLC_BI__Other_Lien_Position_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Other_Lien_Position_Value__c
+    - name: LLC_BI__Override_Reason__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Override_Reason__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Override_Reason__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Override_Reason__c
+          max_length: 32768
+    - name: LLC_BI__Second_Lien_Position_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Second_Lien_Position_Value__c
+    - name: LLC_BI__Start_Date__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Start_Date__c
+    - name: LLC_BI__Third_Lien_Position_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Third_Lien_Position_Value__c
+    - name: LLC_BI__Total_Prior_Lien_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Prior_Lien_Amount__c
+    - name: LLC_BI__Total_Superior_Lien_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Superior_Lien_Amount__c
+    - name: LLC_BI__Unique_Id__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Unique_Id__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Unique_Id__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Unique_Id__c
+          max_length: 255
+    - name: LLC_BI__LookupKey__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__LookupKey__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__LookupKey__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__LookupKey__c
+          max_length: 255
+    - name: LLC_BI__Pledged_Rollup_Count__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Pledged_Rollup_Count__c
+    - name: LLC_BI__Pledged_Status__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Pledged_Status__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Pledged_Status__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Pledged_Status__c
+          max_length: 255
+    - name: LLC_BI__Total_Pledged_Rollup_Lendable_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Pledged_Rollup_Lendable_Value__c
+    - name: LLC_BI__Total_Pledged_Rollup_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Pledged_Rollup_Value__c
+    - name: LLC_BI__Original_Loan_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Original_Loan_Amount__c
+    - name: LLC_BI__Auto_Applied_Advance_Rate__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Auto_Applied_Advance_Rate__c
+    - name: LLC_BI__Matrix_ID__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Matrix_ID__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Matrix_ID__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Matrix_ID__c
+          max_length: 18
+    - name: LLC_BI__Matrix_Version__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Matrix_Version__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__Matrix_Version__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__Matrix_Version__c
+          max_length: 18
+    - name: CCS_Google_Security_Address__Street__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Security_Address__Street__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Security_Address__Street__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Security_Address__Street__s
+          max_length: 255
+    - name: CCS_Google_Security_Address__City__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Security_Address__City__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Security_Address__City__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Security_Address__City__s
+          max_length: 40
+    - name: CCS_Google_Security_Address__PostalCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Security_Address__PostalCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Security_Address__PostalCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Security_Address__PostalCode__s
+          max_length: 20
+    - name: CCS_Google_Security_Address__StateCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Security_Address__StateCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Security_Address__StateCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Security_Address__StateCode__s
+          max_length: 10
+    - name: CCS_Google_Security_Address__CountryCode__s
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Security_Address__CountryCode__s
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CCS_Google_Security_Address__CountryCode__s
+          column_type: String
+      - length_check:
+          name: Length Check for CCS_Google_Security_Address__CountryCode__s
+          max_length: 10
+    - name: CCS_Google_Security_Address__c
+      tests:
+      - not_null:
+          name: Non-Null Check for CCS_Google_Security_Address__c
+  - name: rskcsp_ds_loan_collateral_aggregate_curated
+    columns:
+    - name: Id
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Id
+          column_type: String
+      - length_check:
+          name: Length Check for Id
+          max_length: 18
+    - name: OwnerId
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for OwnerId
+          column_type: String
+      - length_check:
+          name: Length Check for OwnerId
+          max_length: 18
+    - name: Name
+      tests:
+      - not_null:
+          name: Non-Null Check for Name
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for Name
+          column_type: String
+      - length_check:
+          name: Length Check for Name
+          max_length: 80
+    - name: CurrencyIsoCode
+      tests:
+      - not_null:
+          name: Non-Null Check for CurrencyIsoCode
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CurrencyIsoCode
+          column_type: String
+      - length_check:
+          name: Length Check for CurrencyIsoCode
+          max_length: 3
+    - name: CreatedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for CreatedById
+          column_type: String
+      - length_check:
+          name: Length Check for CreatedById
+          max_length: 18
+    - name: LastModifiedById
+      tests:
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LastModifiedById
+          column_type: String
+      - length_check:
+          name: Length Check for LastModifiedById
+          max_length: 18
+    - name: LLC_BI__lookupKey__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__lookupKey__c
+      - dbt_expectations.expect_column_values_to_be_of_type:
+          name: Datatype Check for LLC_BI__lookupKey__c
+          column_type: String
+      - length_check:
+          name: Length Check for LLC_BI__lookupKey__c
+          max_length: 255
+    - name: LLC_BI__Current_Total_Lendable_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Current_Total_Lendable_Value__c
+    - name: LLC_BI__Total_Collateral_Pledged__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Collateral_Pledged__c
+    - name: LLC_BI__Total_Collateral_Value__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Collateral_Value__c
+    - name: LLC_BI__Total_Current_Lien_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Current_Lien_Amount__c
+    - name: LLC_BI__Total_Superior_Lien_Amount__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Total_Superior_Lien_Amount__c
+    - name: LLC_BI__Collateral_Pledged_Count__c
+      tests:
+      - not_null:
+          name: Non-Null Check for LLC_BI__Collateral_Pledged_Count__c
