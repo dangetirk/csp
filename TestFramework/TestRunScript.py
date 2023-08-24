@@ -22,7 +22,7 @@ INPUT_CSV = config['DEFAULT']['INPUT_CSV']
 SOURCE_FOLDER = config['DEFAULT']['SOURCE_FOLDER']
 REPORT_FOLDER = config['DEFAULT']['REPORT_FOLDER']
 RESULTS_FOLDER = config['DEFAULT']['RESULTS_FOLDER']
-
+SQL_PATH = config['DEFAULT']['SQL_PATH']
 df = pd.read_csv(INPUT_CSV)
 value = df.iloc[0, 3] 
 if not os.path.exists(REPORT_FOLDER):
@@ -218,8 +218,12 @@ def process_test_cases(csv_file):
             except Exception as e:
                 logging.error(f"Error processing test case {row['tcname']}. Error: {e}")
                 continue
+
 if __name__ == "__main__":
     try:
-        process_test_cases(INPUT_CSV)
+        file_path = os.path.join(INPUT_CSV)
+        print(f"Attempting to access file at: {file_path}")
+        process_test_cases(file_path)
     except Exception as e:
         logging.error(f"Script encountered an error: {e}")
+
