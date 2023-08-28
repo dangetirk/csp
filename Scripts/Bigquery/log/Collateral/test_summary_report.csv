@@ -1,5 +1,0 @@
-Table,Duplicates Tests,Total Tests,Passed,Failed,Nulls Tests,Total Tests,Passed,Failed,Length Tests,Total Tests,Passed,Failed,Datatype Tests,Total Tests,Passed,Failed
-dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_deed_of_priority_curated,Length Tests,9,7,2,Duplicates Tests,13,3,10,Nulls Tests,1,1,0,Datatype Tests,13,7,6
-dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_ccs_security_case_curated,Length Tests,9,7,2,Duplicates Tests,13,3,10,Nulls Tests,1,1,0,Datatype Tests,13,7,6
-dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_collateral_valuation_curated,Length Tests,9,7,2,Duplicates Tests,13,3,10,Nulls Tests,1,1,0,Datatype Tests,13,7,6
-dmn01-rsksoi-bld-01-2017.dmn01_rsksoi_euwe2_rsk_csp_ds_curation.rskcsp_ds_account_collateral_curated,Length Tests,9,7,2,Duplicates Tests,13,3,10,Nulls Tests,1,1,0,Datatype Tests,13,7,6
