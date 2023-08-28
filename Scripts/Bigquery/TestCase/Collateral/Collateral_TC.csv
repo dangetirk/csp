@@ -1,0 +1,5 @@
+test_type,column_details_file
+datatype,Collateral.csv
+nulls,Collateral.csv
+length,Collateral.csv
+duplicates,Collateral.csv
