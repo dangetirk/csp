@@ -1,4 +1,0 @@
-Test Name,Bigquery SQL,salesforce SQL,bigquery index,salesforce index,execute,SQL subfolder, comments
-TC_Collateral_Aggregate,Collateral_Aggregate_GCP.sql,Collateral_Aggregate_NCINO.sql,"[0]","[0]",1,Collateral
-TC_Collateral_Type,Collateral_Type_GCP.sql,Collateral_Type_NCINO.sql,"[0]","[0]",1,Collateral
-TC_security_case,security_case_GCP.sql,security_case_NCINO.sql,"[0]","[0]",1,Collateral

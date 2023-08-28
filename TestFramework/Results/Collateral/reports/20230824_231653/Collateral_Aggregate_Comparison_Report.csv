@@ -1,3 +1,0 @@
-Id,OwnerId,Name,CurrencyIsoCode,CreatedDate,CreatedById,LastModifiedDate,LastModifiedById,LLC_BI__lookupKey__c,LLC_BI__Current_Total_Lendable_Value__c,LLC_BI__Total_Collateral_Pledged__c,LLC_BI__Total_Collateral_Value__c,LLC_BI__Total_Current_Lien_Amount__c,LLC_BI__Total_Superior_Lien_Amount__c,LLC_BI__Collateral_Pledged_Count__c,_merge
-a2126000001p79BAAQ,0052600000A71TrAAJ,agg,CZK,2023-08-24T16:00:12.000+0000,0052600000A71TrAAJ,2023-08-24T16:00:22.000+0000,0052600000A71TrAAJ,,288342.0,0.0,288342.0,3322266.43203,0.0,1.0,Salesforce
-a2126000001p79BAAQ,0052600000A71TrAAJ,agg,CZK,2023-08-24T16:00:12.000+0000,0052600000A71TrAAJ,2023-08-24T16:00:22.000+0000,0052600000A71TrAAJ,,288342.0,0.0,288342.0,3322266.43,0.0,1.0,BigQuery
