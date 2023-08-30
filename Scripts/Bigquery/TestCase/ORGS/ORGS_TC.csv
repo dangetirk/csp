@@ -1,0 +1,5 @@
+test_type,column_details_file
+datatype,ORGS.csv
+nulls,ORGS.csv
+length,ORGS.csv
+duplicates,ORGS.csv

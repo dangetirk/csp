@@ -9,7 +9,7 @@ import configparser
 
 # Read the configuration file
 config = configparser.ConfigParser(interpolation=None)
-config.read('/Users/Ratna-Kumar.Dangeti/Documents/GitHub/csp/TestFramework/config.ini')
+config.read('/Users/Ratna-Kumar.Dangeti/Documents/GitHub/csp/TestFramework/config_Collateral.ini')
 # Fetching configuration from the .ini file
 RESULTS_PATH = config['DEFAULT']['RESULTS_PATH']
 LOG_LEVEL = config['DEFAULT']['LOG_LEVEL']

@@ -41,3 +41,4 @@ Id
 ,CCS_Relationship_in_an_OGSA__c
 from
 LLC_BI__Connection__c
+where CreatedDate >=2023-08-29T00:00:00.000Z

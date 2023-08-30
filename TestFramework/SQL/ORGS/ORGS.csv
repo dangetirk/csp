@@ -1,0 +1,3 @@
+tcname,biqquerysqlfile,salesforcesqlfile,Source
+TC_Connection,Connection_GCP.sql,Connection_NCINO.sql,ORGS
+TC_Approval,Org_Approval_GCP.sql,Org_Approval_NCINO.sql,ORGS

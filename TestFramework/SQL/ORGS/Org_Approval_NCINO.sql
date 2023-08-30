@@ -18,4 +18,4 @@
     ,CCS_Review_Date__c
     ,CCS_Reviewer_Comments__c
     FROM CCS_ORG_Approval__c
-    where CreatedDate >=2023-08-16T00:00:00.000Z
+    where CreatedDate >=2023-08-29T00:00:00.000Z
